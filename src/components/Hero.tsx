@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronDown, Github, Linkedin, Mail } from 'lucide-react';
+import { ChevronDown, Github, Linkedin, Mail, Download } from 'lucide-react';
 import { PixelButton } from './PixelButton';
 import { ImageModal } from './ImageModal';
 
@@ -17,6 +17,15 @@ export const Hero: React.FC = () => {
 
   const closeImageModal = () => {
     setIsModalOpen(false);
+  };
+
+  const downloadResume = () => {
+    const link = document.createElement('a');
+    link.href = '/Tafsirul_Islam_Shafin_Resume.pdf';
+    link.download = 'Tafsirul_Islam_Shafin_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -64,7 +73,7 @@ export const Hero: React.FC = () => {
 
           {/* Name and Title */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-6 tracking-tight">
-            FRONTEND
+            FULLSTACK
             <br />
             <span className="text-green-500 dark:text-green-400">DEVELOPER</span>
           </h1>
@@ -83,6 +92,10 @@ export const Hero: React.FC = () => {
             </PixelButton>
             <PixelButton variant="secondary" onClick={() => scrollToSection('contact')}>
               Get In Touch
+            </PixelButton>
+            <PixelButton variant="secondary" onClick={downloadResume} className="flex items-center gap-2">
+              <Download className="w-4 h-4" />
+              Download Resume
             </PixelButton>
           </div>
 

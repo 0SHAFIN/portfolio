@@ -11,7 +11,7 @@
   "static/chunks/node_modules_react-dom_cjs_react-dom_development_2b5e0eb3.js",
   "static/chunks/node_modules_react-dom_8a8085df._.js",
   "static/chunks/node_modules_lottie-web_build_player_lottie_c53ffccf.js",
-  "static/chunks/node_modules_d2e9b621._.js"
+  "static/chunks/node_modules_9b2adaa5._.js"
 ],
     source: "entry"
 });

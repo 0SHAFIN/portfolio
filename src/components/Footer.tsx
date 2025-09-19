@@ -1,5 +1,4 @@
 import React from 'react';
-import { Heart } from 'lucide-react';
 import animationData from "../../public/animations/Programing.json";
 import Lottie from "lottie-react";
 
