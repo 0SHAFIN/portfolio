@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Frontend Developer & CSE Student</title>
+    <meta name="description" content="Frontend Developer specializing in React, Next.js, Flutter, and modern web technologies. Currently working at Ecomstal." />
+    <meta name="keywords" content="frontend developer, react, nextjs, flutter, computer science, portfolio, web development" />
+    <meta name="author" content="Your Name" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Portfolio | Frontend Developer & CSE Student" />
+    <meta property="og:description" content="Frontend Developer specializing in React, Next.js, Flutter, and modern web technologies." />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Portfolio | Frontend Developer & CSE Student" />
+    <meta property="twitter:description" content="Frontend Developer specializing in React, Next.js, Flutter, and modern web technologies." />
+    
+    <!-- Preload critical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <style>
+      /* Critical CSS for initial paint */
+      body {
+        font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #f0fdf4 0%, #dbeafe 100%);
+        color: #1f2937;
+        transition: all 0.3s ease;
+      }
+
+      .dark body {
+        background: linear-gradient(135deg, #0ea5e9 0%, #d946ef 100%);
+        color: #ffffff;
+      }
+      
+      #root {
+        min-height: 100vh;
+      }
+      
+      /* Loading spinner */
+      .loading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(135deg, #f0fdf4 0%, #dbeafe 100%);
+        transition: background 0.3s ease;
+      }
+
+      .dark .loading {
+        background: linear-gradient(135deg, #0ea5e9 0%, #d946ef 100%);
+      }
+      
+      .pixel-spinner {
+        width: 40px;
+        height: 40px;
+        background: #059669;
+        animation: spin 1s linear infinite;
+        clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px));
+        transition: background 0.3s ease;
+      }
+
+      .dark .pixel-spinner {
+        background: #10b981;
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="loading">
+        <div class="pixel-spinner"></div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
