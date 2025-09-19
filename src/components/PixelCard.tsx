@@ -9,7 +9,7 @@ interface PixelCardProps {
 export const PixelCard: React.FC<PixelCardProps> = ({ 
   children, 
   className = '',
-  glowing = false
+  glowing = false,
 }) => {
   return (
     <div
@@ -23,7 +23,7 @@ export const PixelCard: React.FC<PixelCardProps> = ({
       `}
       style={{ 
         clipPath: 'polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px))',
-        imageRendering: 'pixelated'
+        imageRendering: 'pixelated',
       }}
     >
       {children}

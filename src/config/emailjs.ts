@@ -13,7 +13,7 @@ export const EMAILJS_CONFIG = {
   TEMPLATE_ID: 'template_otdv8io',
   
   // Your EmailJS public key (found in your EmailJS dashboard)
-  PUBLIC_KEY: '8dnUv1vjAj8lpR0iX'
+  PUBLIC_KEY: '8dnUv1vjAj8lpR0iX',
 };
 
 // Template variables that EmailJS will use:

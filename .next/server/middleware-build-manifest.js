@@ -1,35 +1,6 @@
 globalThis.__BUILD_MANIFEST = {
   "pages": {
-    "/": [
-      "static/chunks/[root-of-the-server]__bac77ce2._.js",
-      "static/chunks/node_modules_next_dist_compiled_next-devtools_index_5277ebc8.js",
-      "static/chunks/node_modules_next_dist_compiled_166120c5._.js",
-      "static/chunks/node_modules_next_dist_shared_lib_2c2ec201._.js",
-      "static/chunks/node_modules_next_dist_client_d0aa886c._.js",
-      "static/chunks/node_modules_next_dist_2e2215b7._.js",
-      "static/chunks/node_modules_react_e3593a73._.js",
-      "static/chunks/node_modules_react-dom_cjs_react-dom_development_2b5e0eb3.js",
-      "static/chunks/node_modules_react-dom_8a8085df._.js",
-      "static/chunks/node_modules_lottie-web_build_player_lottie_c53ffccf.js",
-      "static/chunks/node_modules_9b2adaa5._.js",
-      "static/chunks/pages_index_2da965e7._.js",
-      "static/chunks/turbopack-pages_index_55228dfa._.js"
-    ],
-    "/_app": [
-      "static/chunks/node_modules_next_dist_compiled_next-devtools_index_5277ebc8.js",
-      "static/chunks/node_modules_next_dist_compiled_166120c5._.js",
-      "static/chunks/node_modules_next_dist_shared_lib_2c2ec201._.js",
-      "static/chunks/node_modules_next_dist_client_d0aa886c._.js",
-      "static/chunks/node_modules_next_dist_2e2215b7._.js",
-      "static/chunks/node_modules_react_e3593a73._.js",
-      "static/chunks/node_modules_react-dom_cjs_react-dom_development_2b5e0eb3.js",
-      "static/chunks/node_modules_react-dom_8a8085df._.js",
-      "static/chunks/node_modules_b095c3f4._.js",
-      "static/chunks/[root-of-the-server]__73ecdec8._.js",
-      "static/chunks/src_index_f051a9e2.css",
-      "static/chunks/pages__app_2da965e7._.js",
-      "static/chunks/turbopack-pages__app_7db9f8d5._.js"
-    ]
+    "/_app": []
   },
   "devFiles": [],
   "ampDevFiles": [],

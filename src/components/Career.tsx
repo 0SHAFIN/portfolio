@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { PixelCard } from './PixelCard';
 
 const careerData = [
@@ -9,7 +9,7 @@ const careerData = [
     company: 'Ecomstal',
     description: 'Working as a Frontend Developer at Ecomstal, where I bring designs to life with code.',
     achievements: ['Learned SSR, CSR', 'Improved SEO scores', 'Enhanced user experience'],
-    color: 'bg-blue-500'
+    color: 'bg-blue-500',
   },
   {
     year: '2025',
@@ -18,7 +18,7 @@ const careerData = [
     company: 'Coder surge',
     description: 'Worked as a Full Stack Developer at Coder surge, where I bring designs to life with code.',
     achievements: ['Learned Next.js, Tailwind CSS, TypeScript', 'Learned Supabase', 'Learned Node.js, Express.js'],
-    color: 'bg-blue-500'
+    color: 'bg-blue-500',
   },
 
 ];
@@ -156,7 +156,7 @@ export const Career: React.FC = () => {
                   { number: '1', label: 'Years Experience' },
                   { number: '4+', label: 'Projects Completed' },
                   { number: '1', label: 'Companies Worked' },
-                  { number: '3+', label: 'Technologies Mastered' }
+                  { number: '3+', label: 'Technologies Mastered' },
                 ].map((stat, index) => (
                   <div key={index} className="text-center group">
                     <div className={`text-2xl md:text-3xl font-bold text-green-500 dark:text-green-400 transition-all duration-300 group-hover:scale-110 ${

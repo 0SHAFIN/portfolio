@@ -15,15 +15,15 @@ export const PixelButton: React.FC<PixelButtonProps> = ({
   variant = 'primary',
   className = '',
   disabled = false,
-  type = 'button'
+  type = 'button',
 }) => {
   const baseClasses = `
     px-6 py-3 font-bold text-sm tracking-wide uppercase
     transition-all duration-200 border-2 relative overflow-hidden
     ${disabled 
-      ? 'cursor-not-allowed opacity-50' 
-      : 'cursor-pointer hover:scale-105 active:scale-95'
-    }
+    ? 'cursor-not-allowed opacity-50' 
+    : 'cursor-pointer hover:scale-105 active:scale-95'
+}
   `;
 
   const variantClasses = variant === 'primary' 
@@ -48,7 +48,7 @@ export const PixelButton: React.FC<PixelButtonProps> = ({
       className={`${baseClasses} ${variantClasses} ${className}`}
       style={{ 
         clipPath: 'polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px))',
-        imageRendering: 'pixelated'
+        imageRendering: 'pixelated',
       }}
     >
       {children}

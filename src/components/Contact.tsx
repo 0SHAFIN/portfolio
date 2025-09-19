@@ -1,8 +1,8 @@
-import React, { useState, useRef, useEffect } from 'react';
-import emailjs from "@emailjs/browser";
+import React, { useEffect, useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 import { PixelCard } from './PixelCard';
 import { PixelButton } from './PixelButton';
-import { Mail, Phone, MapPin, Github, Linkedin, Send, CheckCircle, AlertCircle } from 'lucide-react';
+import { AlertCircle, CheckCircle, Github, Linkedin, Mail, MapPin, Phone, Send } from 'lucide-react';
 import { EMAILJS_CONFIG } from '../config/emailjs';
 
 export const Contact: React.FC = () => {
@@ -11,7 +11,7 @@ export const Contact: React.FC = () => {
     name: '',
     email: '',
     subject: '',
-    message: ''
+    message: '',
   });
   const [submitStatus, setSubmitStatus] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -28,7 +28,7 @@ export const Contact: React.FC = () => {
 
   const sendEmail = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!formRef.current) return;
+    if (!formRef.current) {return;}
 
     setIsSubmitting(true);
     setSubmitStatus(null);
@@ -42,7 +42,7 @@ export const Contact: React.FC = () => {
         EMAILJS_CONFIG.SERVICE_ID,
         EMAILJS_CONFIG.TEMPLATE_ID,
         formRef.current,
-        EMAILJS_CONFIG.PUBLIC_KEY
+        EMAILJS_CONFIG.PUBLIC_KEY,
       );
 
       console.log('EmailJS Result:', result);
@@ -65,7 +65,7 @@ export const Contact: React.FC = () => {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData(prev => ({
       ...prev,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     }));
   };
 
@@ -145,7 +145,7 @@ export const Contact: React.FC = () => {
                   {[
                     { Icon: Github, href: 'https://github.com/0SHAFIN', label: 'GitHub', color: 'bg-gray-800' },
                     { Icon: Linkedin, href: 'https://www.linkedin.com/in/tafsirul-islam-shafin-98126a296/', label: 'LinkedIn', color: 'bg-blue-600' },
-                    { Icon: Mail, href: 'mailto:tafsirul.shafin44@gmail.com', label: 'Email', color: 'bg-red-500' }
+                    { Icon: Mail, href: 'mailto:tafsirul.shafin44@gmail.com', label: 'Email', color: 'bg-red-500' },
                   ].map(({ Icon, href, label, color }) => (
                     <a
                       key={label}

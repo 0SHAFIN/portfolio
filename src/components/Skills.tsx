@@ -5,33 +5,33 @@ const skills = [
   {
     category: 'Frontend',
     color: 'bg-blue-500',
-    items: ['React', 'Next.js', 'React Native', 'Tailwind CSS', 'TypeScript']
+    items: ['React', 'Next.js', 'React Native', 'Tailwind CSS', 'TypeScript'],
   },
   {
     category: 'Backend',
     color: 'bg-green-500',
-    items: ['Node.js', 'Nest.js', 'Express', 'REST APIs', 'PostgreSQL']
+    items: ['Node.js', 'Nest.js', 'Express', 'REST APIs', 'PostgreSQL'],
   },
   {
     category: 'Mobile',
     color: 'bg-purple-500',
-    items: ['Flutter', 'React Native', 'Firebase', 'Native APIs', 'App Store']
+    items: ['Flutter', 'React Native', 'Firebase', 'Native APIs', 'App Store'],
   },
   {
     category: 'Programming',
     color: 'bg-orange-500',
-    items: ['C++', 'JavaScript', 'TypeScript', 'Dart', 'Python']
+    items: ['C++', 'JavaScript', 'TypeScript', 'Dart', 'Python'],
   },
   {
     category: 'Design & Tools',
     color: 'bg-pink-500',
-    items: ['Illustrator', 'Figma', 'Postman', 'Git', 'VS Code']
+    items: ['Illustrator', 'Figma', 'Postman', 'Git', 'VS Code'],
   },
   {
     category: 'Hardware',
     color: 'bg-red-500',
-    items: ['Arduino', 'IoT', 'Sensors', 'Microcontrollers', 'Electronics']
-  }
+    items: ['Arduino', 'IoT', 'Sensors', 'Microcontrollers', 'Electronics'],
+  },
 ];
 
 export const Skills: React.FC = () => {
@@ -67,7 +67,7 @@ export const Skills: React.FC = () => {
                 </div>
                 
                 <div className="space-y-3">
-                  {skillGroup.items.map((skill, skillIndex) => (
+                  {skillGroup.items.map((skill, _skillIndex) => (
                     <div key={skill} className="flex items-center gap-2">
                       <div className="w-2 h-2 bg-green-500 dark:bg-green-400"></div>
                       <span className="text-gray-700 dark:text-gray-300 font-medium">

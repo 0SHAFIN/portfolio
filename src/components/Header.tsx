@@ -1,9 +1,8 @@
 import React from 'react';
-import { Sun, Moon } from 'lucide-react';
+import { Moon, Sun } from 'lucide-react';
 import { useTheme } from './ThemeProvider';
-import { PixelButton } from './PixelButton';
-import Lottie from "lottie-react";
-import animationData from "../../public/animations/Programing.json";
+import Lottie from 'lottie-react';
+import animationData from '../../public/animations/Programing.json';
 
 export const Header: React.FC = () => {
   const { theme, toggleTheme } = useTheme();

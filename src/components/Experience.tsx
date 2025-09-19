@@ -1,6 +1,6 @@
 import React from 'react';
 import { PixelCard } from './PixelCard';
-import { Calendar, MapPin, ExternalLink } from 'lucide-react';
+import { Calendar, ExternalLink, MapPin } from 'lucide-react';
 
 const experiences = [
   {
@@ -14,18 +14,18 @@ const experiences = [
     highlights: [
       'Improved application performance by 40%',
       'Built responsive components used across multiple projects',
-      'Collaborated with cross-functional teams'
-    ]
+      'Collaborated with cross-functional teams',
+    ],
   },
   {
     title: 'E-Commerce Website',
-    company:"University",
-    location:"On Campus",
-    period:"20 june 2025 - 17 September 2025",
-    type:"Education",
-    description:"Developed a full-stack e-commerce website using Nest.js, Next.js, Tailwind CSS, and postgreSQL. The website allows users to browse products, add them to the cart, and checkout securely. The admin can manage products, orders, and users.",
+    company:'University',
+    location:'On Campus',
+    period:'20 june 2025 - 17 September 2025',
+    type:'Education',
+    description:'Developed a full-stack e-commerce website using Nest.js, Next.js, Tailwind CSS, and postgreSQL. The website allows users to browse products, add them to the cart, and checkout securely. The admin can manage products, orders, and users.',
     technologies:['Nest.js','Next.js','Tailwind CSS','TypeScript','Supabase','API Integration', 'Secure routing','postgreSQL'],
-    highlights:['Developed a full-stack e-commerce website using Next.js, Tailwind CSS, and Supabase.','The website allows users to browse products, add them to the cart, and checkout securely.','The admin can manage products, orders, and users.']
+    highlights:['Developed a full-stack e-commerce website using Next.js, Tailwind CSS, and Supabase.','The website allows users to browse products, add them to the cart, and checkout securely.','The admin can manage products, orders, and users.'],
   },
   
 ];
@@ -34,14 +34,14 @@ const projects = [
   {
     title: 'Money Exchange App',
     description: 'Cross-platform mobile application built with Flutter, featuring real-time inventory, payment integration, and admin dashboard.',
-    technologies: ['Flutter', 'Firebase', 'Dart', 'REST APIs','API Integration',],
-    status: 'Completed'
+    technologies: ['Flutter', 'Firebase', 'Dart', 'REST APIs','API Integration'],
+    status: 'Completed',
   },
   {
     title: 'IoT Survey Bot',
     description: 'Arduino-based smart survey bot with mobile app control, sensor monitoring, and automated responses.',
     technologies: ['Arduino', 'Flutter', 'IoT', 'Sensors','Firebase'],
-    status: 'Completed'
+    status: 'Completed',
   },
  
 ];

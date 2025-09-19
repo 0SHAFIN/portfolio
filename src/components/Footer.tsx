@@ -1,6 +1,6 @@
 import React from 'react';
-import animationData from "../../public/animations/Programing.json";
-import Lottie from "lottie-react";
+import animationData from '../../public/animations/Programing.json';
+import Lottie from 'lottie-react';
 
 export const Footer: React.FC = () => {
   return (
@@ -15,7 +15,7 @@ export const Footer: React.FC = () => {
                 <div className="w-24 h-24">
                   <Lottie animationData={animationData} loop={true} />
                 </div>
-            </div>
+              </div>
               <p className="text-gray-400 leading-relaxed">
                 Crafting digital experiences with passion, precision, and a touch of pixel-perfect magic.
               </p>
@@ -68,7 +68,7 @@ export const Footer: React.FC = () => {
           <div className="border-t border-gray-800 pt-8">
             <div className="text-gray-400 text-sm text-center">
                 © {new Date().getFullYear()} Tafsirul Islam Shafin. All rights reserved.
-              </div>
+            </div>
           </div>
 
           {/* Pixel Art Decoration */}
@@ -79,13 +79,13 @@ export const Footer: React.FC = () => {
                   key={i}
                   className={`w-2 h-2 ${
                     i % 4 === 0 ? 'bg-green-400' : 
-                    i % 3 === 0 ? 'bg-blue-400' : 
-                    i % 2 === 0 ? 'bg-purple-400' : 
-                    'bg-gray-600'
+                      i % 3 === 0 ? 'bg-blue-400' : 
+                        i % 2 === 0 ? 'bg-purple-400' : 
+                          'bg-gray-600'
                   }`}
                   style={{ 
                     animationDelay: `${i * 0.1}s`,
-                    animation: 'pulse 2s infinite'
+                    animation: 'pulse 2s infinite',
                   }}
                 />
               ))}

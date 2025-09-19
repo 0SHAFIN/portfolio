@@ -5,10 +5,13 @@
   "type": "module",
 
   "scripts": {
-    "dev": "next dev --turbopack ",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "lint:check": "eslint . --max-warnings 0",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",

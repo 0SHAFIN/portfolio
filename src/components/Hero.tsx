@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronDown, Github, Linkedin, Mail, Download } from 'lucide-react';
+import { ChevronDown, Download, Github, Linkedin, Mail } from 'lucide-react';
 import { PixelButton } from './PixelButton';
 import { ImageModal } from './ImageModal';
 
@@ -51,7 +51,7 @@ export const Hero: React.FC = () => {
               className="w-32 h-32 mx-auto bg-gradient-to-br from-green-400 to-green-600 dark:from-green-400 dark:to-green-500 border-4 border-gray-800 dark:border-gray-200 cursor-pointer hover:scale-105 transition-transform duration-300"
               style={{ 
                 clipPath: 'polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 16px 100%, 0 calc(100% - 16px))',
-                imageRendering: 'pixelated'
+                imageRendering: 'pixelated',
               }}
               onClick={openImageModal}
             >
@@ -104,7 +104,7 @@ export const Hero: React.FC = () => {
             {[
               { Icon: Github, href: 'https://github.com/0SHAFIN', label: 'GitHub' },
               { Icon: Linkedin, href: 'https://www.linkedin.com/in/tafsirul-islam-shafin-98126a296/', label: 'LinkedIn' },
-              { Icon: Mail, href: 'mailto:tafsirul.shafin44@gmail.com', label: 'Email' }
+              { Icon: Mail, href: 'mailto:tafsirul.shafin44@gmail.com', label: 'Email' },
             ].map(({ Icon, href, label }) => (
               <a
                 key={label}
