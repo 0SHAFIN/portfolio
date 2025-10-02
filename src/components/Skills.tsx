@@ -67,7 +67,7 @@ export const Skills: React.FC = () => {
                 </div>
                 
                 <div className="space-y-3">
-                  {skillGroup.items.map((skill, _skillIndex) => (
+                  {skillGroup.items.map((skill) => (
                     <div key={skill} className="flex items-center gap-2">
                       <div className="w-2 h-2 bg-green-500 dark:bg-green-400"></div>
                       <span className="text-gray-700 dark:text-gray-300 font-medium">

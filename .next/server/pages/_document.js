@@ -1,5 +1,1 @@
-var R=require("../chunks/ssr/[turbopack]_runtime.js")("server/pages/_document.js")
-R.c("server/chunks/ssr/node_modules_0b53a5be._.js")
-R.c("server/chunks/ssr/[root-of-the-server]__9f350845._.js")
-R.m("[project]/pages/_document.tsx [ssr] (ecmascript)")
-module.exports=R.m("[project]/pages/_document.tsx [ssr] (ecmascript)").exports
+"use strict";(()=>{var a={};a.id=220,a.ids=[220],a.modules={361:a=>{a.exports=require("next/dist/compiled/next-server/pages.runtime.prod.js")},1379:(a,b,c)=>{c.r(b),c.d(b,{default:()=>f});var d=c(8732),e=c(2341);function f(){return(0,d.jsxs)(e.Html,{lang:"en",children:[(0,d.jsxs)(e.Head,{children:[(0,d.jsx)("meta",{charSet:"utf-8"}),(0,d.jsx)("meta",{name:"viewport",content:"width=device-width, initial-scale=1"}),(0,d.jsx)("meta",{name:"description",content:"Tafsirul Islam Shafin - Frontend Developer Portfolio"}),(0,d.jsx)("link",{rel:"icon",href:"/favicon.ico"})]}),(0,d.jsxs)("body",{children:[(0,d.jsx)(e.Main,{}),(0,d.jsx)(e.NextScript,{})]})]})}},2015:a=>{a.exports=require("react")},3873:a=>{a.exports=require("path")},8732:a=>{a.exports=require("react/jsx-runtime")}};var b=require("../webpack-runtime.js");b.C(a);var c=b.X(0,[341],()=>b(b.s=1379));module.exports=c})();
