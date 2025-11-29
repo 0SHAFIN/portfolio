@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import styles from './TextPressure.module.css';
 
 const TextPressure = ({
   text = 'Compressa',
@@ -142,7 +143,7 @@ const TextPressure = ({
     return () => cancelAnimationFrame(rafId);
   }, [width, weight, italic, alpha, chars.length]);
 
-  const dynamicClassName = [className, flex ? 'flex' : '', stroke ? 'stroke' : ''].filter(Boolean).join(' ');
+  const dynamicClassName = [className, flex ? styles.flex : '', stroke ? styles.stroke : ''].filter(Boolean).join(' ');
 
   return (
     <div
@@ -151,44 +152,14 @@ const TextPressure = ({
         position: 'relative',
         width: '100%',
         height: '100%',
-        background: 'transparent'
+        background: 'transparent',
+        '--text-color': textColor,
+        '--stroke-color': strokeColor
       }}
     >
-      <style>{`
-        @font-face {
-          font-family: '${fontFamily}';
-          src: url('${fontUrl}');
-          font-style: normal;
-        }
-
-        .flex {
-          display: flex;
-          justify-content: space-between;
-        }
-
-        .stroke span {
-          position: relative;
-          color: ${textColor};
-        }
-        .stroke span::after {
-          content: attr(data-char);
-          position: absolute;
-          left: 0;
-          top: 0;
-          color: transparent;
-          z-index: -1;
-          -webkit-text-stroke-width: 3px;
-          -webkit-text-stroke-color: ${strokeColor};
-        }
-
-        .text-pressure-title {
-          color: ${textColor};
-        }
-      `}</style>
-
       <h1
         ref={titleRef}
-        className={`text-pressure-title ${dynamicClassName}`}
+        className={dynamicClassName}
         style={{
           fontFamily,
           textTransform: 'uppercase',
@@ -201,7 +172,8 @@ const TextPressure = ({
           userSelect: 'none',
           whiteSpace: 'nowrap',
           fontWeight: 100,
-          width: '100%'
+          width: '100%',
+          color: textColor
         }}
       >
         {chars.map((char, i) => (

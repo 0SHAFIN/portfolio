@@ -5,6 +5,8 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import RippleGrid from "@/components/RippleGrid";
 import { Fugaz_One } from "next/font/google";
 import TextPressure from "@/components/TextPressure";
+import { SiGithub } from "react-icons/si";
+
 
 const fugazOne = Fugaz_One({
   subsets: ["latin"],
@@ -81,16 +83,15 @@ export default function HeroSection() {
             >
               I build things for the web.
             </motion.h2>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5 }}
-              className="mx-auto mb-8 md:mb-10 max-w-2xl text-base md:text-lg text-[#a1a1aa] leading-relaxed px-2"
-            >
-              I&apos;m a full-stack developer passionate about creating beautiful,
-              functional, and user-friendly applications. Currently focused on
-              building accessible, human-centered products.
-            </motion.p>
+           <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5 }}
+            className="mx-auto mb-8 md:mb-10 max-w-2xl text-base md:text-lg text-[#a1a1aa] leading-relaxed px-2"
+          >
+            I&apos;m a full-stack developer building clean, user-friendly, and accessible web applications.
+          </motion.p>
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -98,16 +99,19 @@ export default function HeroSection() {
               className="w-full sm:w-fit mx-auto flex flex-col items-center justify-center gap-3 sm:gap-4 sm:flex-row pointer-events-auto px-4 sm:px-0"
             >
               <a
-                href="#projects"
+                href="#contact"
                 className="w-full sm:w-auto text-center rounded-lg bg-[#6366f1] px-6 sm:px-8 py-3 font-medium text-white transition-all hover:bg-[#818cf8] hover:scale-105"
               >
-                View My Work
+                Get In Touch
               </a>
               <a
-                href="#contact"
-                className="w-full sm:w-auto text-center rounded-lg border border-[#6366f1] px-6 sm:px-8 py-3 font-medium text-[#6366f1] transition-all hover:bg-[#6366f1]/10 hover:scale-105"
+                href="https://github.com/0SHAFIN"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto text-center rounded-lg border border-[#6366f1] px-6 sm:px-8 py-3 font-medium text-[#6366f1] transition-all hover:bg-[#6366f1]/10 hover:scale-105 flex items-center justify-center gap-2"
               >
-                Get In Touch
+                <SiGithub className="w-5 h-5" />
+                Visit GitHub
               </a>
             </motion.div>
           </div>

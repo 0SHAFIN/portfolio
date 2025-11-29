@@ -166,6 +166,7 @@ export default function EducationSection() {
         >
           <p className="text-[#6366f1] font-mono mb-2">04. Education</p>
           <ScrollFloat
+            scrollContainerRef={sectionRef}
             animationDuration={1}
             ease="back.inOut(2)"
             scrollStart="center bottom+=50%"

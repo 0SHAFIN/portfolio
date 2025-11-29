@@ -11,7 +11,7 @@ const experiences = [
     role: "Frontend Developer",
     period: "1st November 2025 - Present",
     status: "current",
-    description: "Developed a comprehensive healthcare management system with patient records, appointment scheduling, and secure data handling compliant with industry standards.",
+    description: "Velopage.io – AI-powered tool to quickly create professional e-commerce product pages for Shopify and dropshipping stores.",
     tech: ["Nextjs", "Nodejs", "Typescript", "Tailwind CSS", "Git"],
     link: "https://velopage.io/",
   },
@@ -21,7 +21,7 @@ const experiences = [
     role: "Frontend Developer",
     period: "15th June 2025 - Present",
     status: "current",
-    description: "Building a scalable e-commerce platform with real-time inventory management, payment integration, and admin dashboard for analytics and order tracking.",
+    description: "10XProfit.io – All-in-one toolkit and training for Amazon sellers, offering tools for product research, profit calculation, and business growth.",
     tech: ["Nextjs", "Nodejs", "Typescript", "Tailwind CSS", "Git", "Docker"],
     link: "https://10xprofit.io/",
   },
@@ -31,7 +31,7 @@ const experiences = [
     role: "Full-Stack Developer",
     period: "1st september 2025 - 15th October 2025",
     status: "completed",
-    description: "Developed a comprehensive healthcare management system with patient records, appointment scheduling, and secure data handling compliant with industry standards.",
+    description: "MJ Properties – Dubai-based real estate agency specializing in luxury residential and commercial properties, buying, selling, and rentals.",
     tech: ["Nextjs", "Nodejs", "Typescript", "Supabase", "Tailwind CSS", "Git"],
     link: "https://www.mjproperties.ae/",
   },
@@ -41,7 +41,7 @@ const experiences = [
     role: "Frontend Developer",
     period: "15th january 2025 - 15th february 2025",
     status: "completed",
-    description: "Developed a comprehensive healthcare management system with patient records, appointment scheduling, and secure data handling compliant with industry standards.",
+    description: "PopSurge – A tool for website owners to display popups, discounts, and promotional messages to engage users.",
     tech: ["Nextjs", "Nodejs", "Typescript", "Tailwind CSS", "Supabase", "Git"],
     link: "https://www.getpopsurge.com/",
   },
@@ -230,6 +230,7 @@ export default function ExperienceSection() {
         >
           <p className="text-[#6366f1] font-mono mb-2">03. Work</p>
           <ScrollFloat
+            scrollContainerRef={sectionRef}
             animationDuration={1}
             ease="back.inOut(2)"
             scrollStart="center bottom+=50%"

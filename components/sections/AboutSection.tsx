@@ -3,11 +3,12 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import ScrollFloat from "@/components/ScrollFloat";
-import {TextReveal} from "@/components/ui/text-reveal";
+import { TextReveal } from "@/components/ui/text-reveal";
 import ChromaGrid from "@/components/ChromaGrid";
 
 export default function AboutSection() {
   const aboutRef = useRef<HTMLDivElement>(null);
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   const { scrollYProgress: aboutProgress } = useScroll({
     target: aboutRef,
@@ -29,6 +30,7 @@ export default function AboutSection() {
         >
           <p className="text-[#6366f1] font-mono mb-2">01. About</p>
           <ScrollFloat
+            scrollContainerRef={scrollContainerRef}
             animationDuration={1}
             ease='back.inOut(2)'
             scrollStart='center bottom+=50%'
@@ -49,12 +51,11 @@ export default function AboutSection() {
             className="w-full md:max-w-xl"
           >
             <TextReveal>
-              I&apos;m a passionate developer with a strong background in full-stack
-              development. I have experience working on a variety of projects,
-              and I&apos;m always looking for new challenges to take on.
-              My journey in web development started several years ago, and since then
-              I&apos;ve had the privilege of working on diverse projects that have
-              helped me grow as a developer.
+            Hi, I’m Shafin — a full-stack developer passionate about creating clean,
+             modern, and user-friendly web applications. I focus on building accessible,
+              human-centered products that not only look great but also provide seamless experiences.
+               Every project I work on reflects my dedication to combining thoughtful design with efficient
+                code to deliver applications that people enjoy using.
             </TextReveal>
           </motion.div>
 

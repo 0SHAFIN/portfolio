@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 const navLinks = [
   { name: "About", href: "#about", id: "about" },
@@ -65,6 +66,26 @@ export default function Navbar() {
             : "bg-[#18181b]/50 backdrop-blur-sm border-[#27272a]/50"
         }`}
       >
+        {/* Logo */}
+        <a href="#" className="flex items-center mr-2 md:mr-4 pl-2">
+          <motion.div
+            animate={{
+              width: isScrolled ? 32 : 40,
+              height: isScrolled ? 32 : 40,
+            }}
+            transition={{ duration: 0.5, ease: [0.4, 0, 0.2, 1] }}
+            className="relative overflow-hidden rounded-lg"
+          >
+            <Image
+              src="/svg/logo.svg"
+              alt="Shafin Logo"
+              fill
+              className="object-contain rounded-lg"
+              priority
+            />
+          </motion.div>
+        </a>
+
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-1">
           {navLinks.map((link) => (
@@ -101,6 +122,26 @@ export default function Navbar() {
           className="hidden md:block ml-2 px-4 py-2 text-sm font-medium text-white bg-[#6366f1] rounded-full hover:bg-[#818cf8] transition-colors"
         >
           Resume
+        </a>
+
+        {/* Mobile Logo (visible only on mobile) */}
+        <a href="#" className="md:hidden flex items-center pl-2">
+          <motion.div
+            animate={{
+              width: isScrolled ? 32 : 36,
+              height: isScrolled ? 32 : 36,
+            }}
+            transition={{ duration: 0.5, ease: [0.4, 0, 0.2, 1] }}
+            className="relative overflow-hidden rounded-lg"
+          >
+            <Image
+              src="/svg/logo.svg"
+              alt="Shafin Logo"
+              fill
+              className="object-contain rounded-lg"
+              priority
+            />
+          </motion.div>
         </a>
 
         {/* Mobile Menu Button */}
