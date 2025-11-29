@@ -16,15 +16,15 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Shafin | Full-Stack Developer & UI/UX Specialist",
-  description: "Full-stack developer specializing in modern web applications with Next.js, React, and TypeScript. Building clean, accessible, and user-centered digital experiences with advanced animations and interactive UI. Based in Dhaka, Bangladesh.",
+  title: "Shafin | Frontend Developer.",
+  description: "Frontend developer specializing in modern web applications with Next.js, React, and TypeScript. Building clean, accessible, and user-centered digital experiences with advanced animations and interactive UI. Also experienced with backend technologies. Based in Dhaka, Bangladesh.",
   keywords: [
     "Shafin",
     "Tafsirul Islam",
     "tafsirul islam shafin",
-    "Full-Stack Developer",
-    "Web Developer",
     "Frontend Developer",
+    "Web Developer",
+    "Full-Stack Developer",
     "Backend Developer",
     "Next.js Developer",
     "React Developer",
@@ -58,22 +58,22 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://shafin.dev",
-    title: "Shafin | Full-Stack Developer & UI/UX Specialist",
-    description: "Full-stack developer specializing in modern web applications with Next.js, React, and TypeScript. Creating seamless digital experiences with advanced animations and interactive UI.",
+    title: "Shafin | Frontend Developer & UI/UX Specialist",
+    description: "Frontend developer specializing in modern web applications with Next.js, React, and TypeScript. Creating seamless digital experiences with advanced animations and interactive UI. Also experienced with backend technologies.",
     siteName: "Shafin's Portfolio",
     images: [
       {
         url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "Shafin - Full-Stack Developer Portfolio",
+        alt: "Shafin - Frontend Developer Portfolio",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shafin | Full-Stack Developer & UI/UX Specialist",
-    description: "Full-stack developer specializing in modern web applications with Next.js, React, and TypeScript. Creating seamless digital experiences.",
+    title: "Shafin | Frontend Developer & UI/UX Specialist",
+    description: "Frontend developer specializing in modern web applications with Next.js, React, and TypeScript. Creating seamless digital experiences with backend knowledge.",
     images: ["/logo.png"],
     creator: "@shafin",
   },
