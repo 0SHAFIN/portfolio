@@ -66,8 +66,8 @@ export default function Navbar() {
             : "bg-[#18181b]/50 backdrop-blur-sm border-[#27272a]/50"
         }`}
       >
-        {/* Logo */}
-        <a href="#" className="flex items-center mr-2 md:mr-4 pl-2">
+        {/* Logo - Desktop only */}
+        <a href="#" className="hidden md:flex items-center mr-2 md:mr-4 pl-2">
           <motion.div
             animate={{
               width: isScrolled ? 32 : 40,
