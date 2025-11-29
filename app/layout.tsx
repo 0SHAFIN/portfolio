@@ -20,6 +20,8 @@ export const metadata: Metadata = {
   description: "Full-stack developer specializing in modern web applications with Next.js, React, and TypeScript. Building clean, accessible, and user-centered digital experiences with advanced animations and interactive UI. Based in Dhaka, Bangladesh.",
   keywords: [
     "Shafin",
+    "Tafsirul Islam",
+    "tafsirul islam shafin",
     "Full-Stack Developer",
     "Web Developer",
     "Frontend Developer",
