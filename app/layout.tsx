@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     siteName: "Shafin's Portfolio",
     images: [
       {
-        url: "/svg/logo.svg",
+        url: "/logo.png",
         width: 1200,
         height: 630,
         alt: "Shafin - Full-Stack Developer Portfolio",
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Shafin | Full-Stack Developer & UI/UX Specialist",
     description: "Full-stack developer specializing in modern web applications with Next.js, React, and TypeScript. Creating seamless digital experiences.",
-    images: ["/svg/logo.svg"],
+    images: ["/logo.png"],
     creator: "@shafin",
   },
   robots: {
