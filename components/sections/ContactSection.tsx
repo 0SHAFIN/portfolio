@@ -192,7 +192,7 @@ export default function ContactSection() {
                 I&apos;m always interested in hearing about new projects and opportunities. Feel free to reach out if you&apos;d like to collaborate or just have a chat.
               </p>
               <motion.a
-                href="mailto:your.email@example.com"
+                href="mailto:shafin3024344@gmail.com"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#6366f1] px-5 sm:px-6 py-2.5 sm:py-3 font-medium text-white text-sm sm:text-base transition-colors hover:bg-[#818cf8] w-full sm:w-auto"
