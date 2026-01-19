@@ -10,11 +10,11 @@ export default function AboutSection() {
   const aboutRef = useRef<HTMLDivElement>(null);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
-  const { scrollYProgress: aboutProgress } = useScroll({
+  const { scrollYProgress: techProgress } = useScroll({
     target: aboutRef,
     offset: ["start end", "end start"],
   });
-  const aboutY = useTransform(aboutProgress, [0, 1], ["100px", "-100px"]);
+  const aboutY = useTransform(techProgress, [0, 1], ["100px", "-100px"]);
 
   return (
     <section ref={aboutRef} id="about" className="py-16 md:py-32 relative overflow-x-clip">
@@ -22,21 +22,21 @@ export default function AboutSection() {
 
       <motion.div style={{ y: aboutY }} className="mx-auto max-w-6xl px-6 relative z-10">
         <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="mb-12 md:mb-24 w-full flex flex-col items-center justify-center"
+          viewport={{ once: true, amount: 0 }}
+          className="mb-16 md:mb-24 w-full flex flex-col items-center justify-center text-center"
         >
           <p className="text-[#6366f1] font-mono mb-2">01. About</p>
           <ScrollFloat
-            scrollContainerRef={scrollContainerRef}
+            scrollContainerRef={aboutRef}
             animationDuration={1}
             ease='back.inOut(2)'
-            scrollStart='center bottom+=50%'
-            scrollEnd='bottom bottom-=40%'
+            scrollStart='top bottom'
+            scrollEnd='top 30%'
             stagger={0.05}
-            textClassName="text-2xl "
+            textClassName="text-4xl md:text-7xl font-extrabold tracking-tight"
           >
             About Me
           </ScrollFloat>
@@ -51,11 +51,11 @@ export default function AboutSection() {
             className="w-full md:max-w-xl"
           >
             <TextReveal>
-            Hi, I’m Shafin — a full-stack developer passionate about creating clean,
-             modern, and user-friendly web applications. I focus on building accessible,
+              Hi, I’m Shafin — a full-stack developer passionate about creating clean,
+              modern, and user-friendly web applications. I focus on building accessible,
               human-centered products that not only look great but also provide seamless experiences.
-               Every project I work on reflects my dedication to combining thoughtful design with efficient
-                code to deliver applications that people enjoy using.
+              Every project I work on reflects my dedication to combining thoughtful design with efficient
+              code to deliver applications that people enjoy using.
             </TextReveal>
           </motion.div>
 

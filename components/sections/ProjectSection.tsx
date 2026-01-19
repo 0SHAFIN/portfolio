@@ -148,25 +148,26 @@ export default function ProjectSection() {
             <div className="mx-auto max-w-5xl px-6 relative z-10">
                 {/* Section Header */}
                 <motion.div
-                    initial={{ opacity: 0, y: -30 }}
+                    initial={{ opacity: 0, y: -20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
-                    viewport={{ once: true }}
-                    className="mb-16 md:mb-28 text-center"
+                    viewport={{ once: true, amount: 0 }}
+                    className="mb-16 md:mb-24 text-center"
                 >
-                    <p className="text-[#6366f1] font-mono mb-4 tracking-[0.2em] uppercase text-sm font-bold">03. Works</p>
+                    <p className="text-[#6366f1] font-mono mb-2 text-sm sm:text-base">03. Works</p>
                     <ScrollFloat
                         scrollContainerRef={sectionRef}
                         animationDuration={1}
                         ease="back.inOut(2)"
-                        scrollStart="center bottom+=50%"
-                        scrollEnd="bottom bottom-=40%"
+                        scrollStart="top bottom"
+                        scrollEnd="top 30%"
                         stagger={0.05}
+                        textClassName="text-4xl md:text-7xl font-extrabold tracking-tight"
                     >
                         Projects
                     </ScrollFloat>
-                    <p className="text-[#a1a1aa] mt-6 max-w-3xl mx-auto text-base sm:text-xl leading-relaxed font-medium">
-                        A selection of high-impact products I've built, ranging from massive full-stack marketplaces to specialized frontend tools.
+                    <p className="text-[#a1a1aa] mt-4 max-w-3xl mx-auto text-sm sm:text-base leading-relaxed font-medium px-2">
+                        A selection of high-impact products I&apos;ve built, ranging from massive full-stack marketplaces to specialized frontend tools.
                     </p>
                 </motion.div>
 

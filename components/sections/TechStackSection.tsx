@@ -87,7 +87,7 @@ const OrbitIcon = ({ children }: { children: React.ReactNode }) => (
 
 export default function TechStackSection() {
   const techRef = useRef<HTMLDivElement>(null);
-  const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const sectionRef = useRef<HTMLDivElement>(null);
 
   const { scrollYProgress: techProgress } = useScroll({
     target: techRef,
@@ -152,22 +152,24 @@ export default function TechStackSection() {
         </div>
       </div>
 
-      <motion.div style={{ y: techY }} className="mx-auto max-w-6xl px-6 relative z-10">
+      <div className="mx-auto max-w-6xl px-6 relative z-10">
         <motion.div
-          initial={{ opacity: 0, y: -30 }}
+          initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0 }}
           className="mb-16 w-full flex flex-col items-center justify-center text-center"
         >
           <p className="text-[#6366f1] font-mono mb-2">05. Skills</p>
+
           <ScrollFloat
-            scrollContainerRef={scrollContainerRef}
+            scrollContainerRef={techRef}
             animationDuration={1}
             ease="back.inOut(2)"
-            scrollStart="center bottom+=50%"
-            scrollEnd="bottom bottom-=40%"
+            scrollStart="top bottom"
+            scrollEnd="top 30%"
             stagger={0.05}
+            textClassName="text-4xl md:text-7xl font-extrabold tracking-tight"
           >
             Tech Stack
           </ScrollFloat>
@@ -259,7 +261,7 @@ export default function TechStackSection() {
             </div>
           ))}
         </motion.div>
-      </motion.div>
+      </div>
     </section>
   );
 }

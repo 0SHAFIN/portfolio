@@ -158,24 +158,25 @@ export default function EducationSection() {
       <div className="mx-auto max-w-4xl px-6 relative z-10">
         {/* Section Header */}
         <motion.div
-          initial={{ opacity: 0, y: -30 }}
+          initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="mb-10 md:mb-16 text-center"
+          viewport={{ once: true, amount: 0 }}
+          className="mb-16 md:mb-24 text-center"
         >
           <p className="text-[#6366f1] font-mono mb-2">04. Education</p>
           <ScrollFloat
             scrollContainerRef={sectionRef}
             animationDuration={1}
             ease="back.inOut(2)"
-            scrollStart="center bottom+=50%"
-            scrollEnd="bottom bottom-=40%"
+            scrollStart="top bottom"
+            scrollEnd="top 30%"
             stagger={0.05}
+            textClassName="text-4xl md:text-7xl font-extrabold tracking-tight"
           >
             Education
           </ScrollFloat>
-          <p className="text-[#a1a1aa] mt-4 max-w-2xl mx-auto">
+          <p className="text-[#a1a1aa] mt-4 max-w-2xl mx-auto text-sm sm:text-base px-2">
             My academic background and qualifications
           </p>
         </motion.div>

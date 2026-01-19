@@ -69,12 +69,12 @@ export default function ContactSection() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
-  const { scrollYProgress } = useScroll({
+ const { scrollYProgress: techProgress } = useScroll({
     target: sectionRef,
     offset: ["start end", "end start"],
   });
 
-  const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+  const backgroundY = useTransform(techProgress, [0, 1], ["0%", "100%"]);
 
   return (
     <section ref={sectionRef} id="contact" className="py-16 md:py-32 relative overflow-hidden">
@@ -87,20 +87,21 @@ export default function ContactSection() {
       <div className="mx-auto max-w-4xl px-6 relative z-10">
         {/* Section Header */}
         <motion.div
-          initial={{ opacity: 0, y: -30 }}
+          initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="mb-10 md:mb-16 text-center"
+          viewport={{ once: true, amount: 0 }}
+          className="mb-16 md:mb-24 text-center"
         >
-          <p className="text-[#6366f1] font-mono mb-2 text-sm">06. Contact</p>
+          <p className="text-[#6366f1] font-mono mb-2 text-sm sm:text-base">06. Contact</p>
           <ScrollFloat
-            scrollContainerRef={scrollContainerRef}
+            scrollContainerRef={sectionRef}
             animationDuration={1}
             ease="back.inOut(2)"
-            scrollStart="center bottom+=50%"
-            scrollEnd="bottom bottom-=40%"
+            scrollStart="top bottom"
+            scrollEnd="top 30%"
             stagger={0.05}
+            textClassName="text-4xl md:text-7xl font-extrabold tracking-tight"
           >
             Get In Touch
           </ScrollFloat>
