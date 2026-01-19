@@ -8,9 +8,10 @@ const RESUME_URL = "/resume/shafin_resume.pdf";
 
 const navLinks = [
   { name: "About", href: "#about", id: "about" },
-  { name: "Skills", href: "#skills", id: "skills" },
   { name: "Experience", href: "#experience", id: "experience" },
+  { name: "Projects", href: "#projects", id: "projects" },
   { name: "Education", href: "#education", id: "education" },
+  { name: "Skills", href: "#skills", id: "skills" },
   { name: "Contact", href: "#contact", id: "contact" },
 ];
 

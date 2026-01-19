@@ -160,7 +160,7 @@ export default function TechStackSection() {
           viewport={{ once: true }}
           className="mb-16 w-full flex flex-col items-center justify-center text-center"
         >
-          <p className="text-[#6366f1] font-mono mb-2">02. Skills</p>
+          <p className="text-[#6366f1] font-mono mb-2">05. Skills</p>
           <ScrollFloat
             scrollContainerRef={scrollContainerRef}
             animationDuration={1}

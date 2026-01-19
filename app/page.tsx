@@ -5,6 +5,7 @@ import {
   AboutSection,
   TechStackSection,
   ExperienceSection,
+  ProjectSection,
   EducationSection,
   ContactSection,
   Footer,
@@ -26,9 +27,10 @@ export default function Home() {
       </div>
       <HeroSection />
       <AboutSection />
-      <TechStackSection />
       <ExperienceSection />
+      <ProjectSection />
       <EducationSection />
+      <TechStackSection />
       <ContactSection />
       <Footer />
     </div>
