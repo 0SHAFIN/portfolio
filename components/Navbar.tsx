@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
+const RESUME_URL = "/resume/shafin_resume.pdf";
+
 const navLinks = [
   { name: "About", href: "#about", id: "about" },
   { name: "Skills", href: "#skills", id: "skills" },
@@ -60,11 +62,10 @@ export default function Navbar() {
           gap: isScrolled ? "4px" : "8px",
         }}
         transition={{ duration: 0.5, ease: [0.4, 0, 0.2, 1] }}
-        className={`flex items-center rounded-full border transition-all duration-500 ease-out ${
-          isScrolled
-            ? "bg-[#18181b]/90 backdrop-blur-md border-[#27272a]"
-            : "bg-[#18181b]/50 backdrop-blur-sm border-[#27272a]/50"
-        }`}
+        className={`flex items-center rounded-full border transition-all duration-500 ease-out ${isScrolled
+          ? "bg-[#18181b]/90 backdrop-blur-md border-[#27272a]"
+          : "bg-[#18181b]/50 backdrop-blur-sm border-[#27272a]/50"
+          }`}
       >
         {/* Logo - Desktop only */}
         <a href="#" className="hidden md:flex items-center mr-2 md:mr-4 pl-2">
@@ -96,11 +97,10 @@ export default function Navbar() {
                 padding: isScrolled ? "8px 12px" : "8px 20px",
               }}
               transition={{ duration: 0.5, ease: [0.4, 0, 0.2, 1] }}
-              className={`relative text-sm transition-colors duration-200 ${
-                activeSection === link.id
-                  ? "text-white"
-                  : "text-[#a1a1aa] hover:text-white"
-              }`}
+              className={`relative text-sm transition-colors duration-200 ${activeSection === link.id
+                ? "text-white"
+                : "text-[#a1a1aa] hover:text-white"
+                }`}
             >
               <span className="relative z-10">{link.name}</span>
               {/* Underline indicator */}
@@ -118,7 +118,8 @@ export default function Navbar() {
 
         {/* Resume Button */}
         <a
-          href="#"
+          href={RESUME_URL}
+          download="Shafin_Resume.pdf"
           className="hidden md:block ml-2 px-4 py-2 text-sm font-medium text-white bg-[#6366f1] rounded-full hover:bg-[#818cf8] transition-colors"
         >
           Resume
@@ -190,17 +191,17 @@ export default function Navbar() {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className={`px-4 py-2 text-sm rounded-lg transition-all duration-200 ${
-                    activeSection === link.id
-                      ? "text-white bg-[#27272a]"
-                      : "text-[#a1a1aa] hover:text-white hover:bg-[#27272a]/50"
-                  }`}
+                  className={`px-4 py-2 text-sm rounded-lg transition-all duration-200 ${activeSection === link.id
+                    ? "text-white bg-[#27272a]"
+                    : "text-[#a1a1aa] hover:text-white hover:bg-[#27272a]/50"
+                    }`}
                 >
                   {link.name}
                 </a>
               ))}
               <a
-                href="#"
+                href={RESUME_URL}
+                download="Shafin_Resume.pdf"
                 className="mt-2 px-4 py-2 text-sm font-medium text-white bg-[#6366f1] rounded-lg hover:bg-[#818cf8] transition-colors text-center"
               >
                 Resume

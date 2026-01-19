@@ -6,16 +6,6 @@ import ScrollFloat from "@/components/ScrollFloat";
 
 const experiences = [
   {
-    project: "Velopage",
-    // company: "Velopage Inc",
-    role: "Frontend Developer",
-    period: "1st November 2025 - Present",
-    status: "current",
-    description: "Velopage.io – AI-powered tool to quickly create professional e-commerce product pages for Shopify and dropshipping stores.",
-    tech: ["Nextjs", "Nodejs", "Typescript", "Tailwind CSS", "Git"],
-    link: "https://velopage.io/",
-  },
-  {
     project: "10xProfit",
     company: "Upstal",
     role: "Frontend Developer",
@@ -24,6 +14,25 @@ const experiences = [
     description: "10XProfit.io – All-in-one toolkit and training for Amazon sellers, offering tools for product research, profit calculation, and business growth.",
     tech: ["Nextjs", "Nodejs", "Typescript", "Tailwind CSS", "Git", "Docker"],
     link: "https://10xprofit.io/",
+  },
+  {
+    project: "Hattim",
+    role: "Lead Full-Stack Developer",
+    period: "December 2025 – Present",
+    status: "current",
+    description: "Hattim – Online toy car store. Engineered as a comprehensive full-stack platform with complex product listings, order processing, and type-safe database operations using Prisma and PostgreSQL.",
+    tech: ["Nextjs", "Nodejs", "Prisma", "PostgreSQL", "REST API", "Tailwind CSS"],
+    link: "https://hattimbd.com/",
+  },
+  {
+    project: "Velopage",
+    // company: "Velopage Inc",
+    role: "Frontend Developer",
+    period: "1st November 2025 - Present",
+    status: "current",
+    description: "Velopage.io – AI-powered tool to quickly create professional e-commerce product pages for Shopify and dropshipping stores.",
+    tech: ["Nextjs", "Nodejs", "Typescript", "Tailwind CSS", "Git"],
+    link: "https://velopage.io/",
   },
   {
     project: "MJ Properties",
@@ -82,11 +91,10 @@ function TimelineItem({ experience, index, isLast }: { experience: typeof experi
         viewport={{ once: true }}
         className="absolute left-0 top-1 z-10"
       >
-        <div className={`w-3 h-3 sm:w-4 sm:h-4 rounded-full border-2 ${
-          experience.status === "current"
-            ? "bg-[#6366f1] border-[#6366f1]"
-            : "bg-[#0a0a0a] border-[#6366f1]"
-        }`}>
+        <div className={`w-3 h-3 sm:w-4 sm:h-4 rounded-full border-2 ${experience.status === "current"
+          ? "bg-[#6366f1] border-[#6366f1]"
+          : "bg-[#0a0a0a] border-[#6366f1]"
+          }`}>
           {experience.status === "current" && (
             <motion.div
               animate={{ scale: [1, 1.5, 1], opacity: [0.5, 0, 0.5] }}

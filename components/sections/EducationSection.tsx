@@ -11,7 +11,7 @@ const education = [
     major: "Software Engineering",
     period: "2022 - 2025",
     description: "Focused on software engineering, algorithms, and web development.",
-    result: "GPA: 3.6/4.0",
+    result: "GPA: 3.62/4.0",
   },
   {
     degree: "Higher Secondary Certificate",

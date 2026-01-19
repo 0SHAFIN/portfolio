@@ -23,6 +23,7 @@ import {
   SiGithub,
   SiPostman,
   SiArduino,
+  SiPrisma,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 
@@ -49,6 +50,7 @@ const Icons = {
   GitHub: () => <SiGithub className="w-8 h-8" color="white" />,
   Postman: () => <SiPostman className="w-8 h-8" color="#FF6C37" />,
   Arduino: () => <SiArduino className="w-8 h-8" color="#00979D" />,
+  Prisma: () => <SiPrisma className="w-8 h-8" color="white" />,
   VSCode: () => <VscVscode className="w-8 h-8" color="#007ACC" />,
 };
 
@@ -71,6 +73,7 @@ const techStack = [
   { name: "Git", icon: Icons.Git, category: "tools" },
   { name: "GitHub", icon: Icons.GitHub, category: "tools" },
   { name: "Postman", icon: Icons.Postman, category: "tools" },
+  { name: "Prisma", icon: Icons.Prisma, category: "backend" },
   { name: "Arduino", icon: Icons.Arduino, category: "tools" },
   { name: "VS Code", icon: Icons.VSCode, category: "tools" },
 ];
