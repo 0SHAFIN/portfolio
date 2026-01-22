@@ -57,7 +57,7 @@ const experiences: Experience[] = [
         role: "Frontend Developer",
         period: "March 2025 - May 2025",
         description: "Testotrack – A cross-platform mobile application designed for efficient testing process management and tracking.",
-        tech: ["Flutter", "Dart", "Firebase", "Nodejs", "Express"],
+        tech: ["Expo go", "React Native", "Typescript", "Supabase", "React Query", "React Navigation"],
         link: "https://play.google.com/store/apps/details?id=com.codesurge.testotrack&hl=en",
       }
     ]
