@@ -18,6 +18,7 @@ interface Experience {
   period: string;
   status: "current" | "completed";
   description?: string;
+  link?: string;
   projects: Project[];
 }
 
@@ -27,7 +28,16 @@ const experiences: Experience[] = [
     period: "June 2025 - Present",
     status: "current",
     description: "Digital solutions company specializing in e-commerce tools and high-performance web applications.",
+    link: "https://upstal.com/",
     projects: [
+      {
+        name: "Leadstal",
+        role: "Full-Stack Developer",
+        period: "January 2026 - Present",
+        description: "Leadstal – A lead scraping platform that pulls leads from Instagram, Google Maps, Zillow, LinkedIn, and more. Recently expanded with an integrated email campaign system, letting users run campaigns from scraped leads or external leads imported into their account.",
+        tech: ["Nextjs", "Typescript", "Tailwind CSS", "Git"],
+        link: "https://leadstal.com",
+      },
       {
         name: "10xProfit",
         role: "Frontend Developer",
@@ -144,7 +154,26 @@ function TimelineItem({ experience, isLast }: { experience: Experience; isLast: 
             viewport={{ once: true }}
             className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-white mb-3"
           >
-            {experience.company}
+            {experience.link ? (
+              <a
+                href={experience.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 sm:gap-3 hover:text-[#6366f1] transition-colors group/company"
+              >
+                <span>{experience.company}</span>
+                <svg
+                  className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-[#6366f1]/60 group-hover/company:text-[#6366f1] transform group-hover/company:translate-x-1 group-hover/company:-translate-y-1 transition-all"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            ) : (
+              experience.company
+            )}
           </motion.h3>
 
           {experience.description && (
