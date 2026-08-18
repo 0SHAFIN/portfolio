@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState, useEffect } from "react";
-import { motion, useScroll, useTransform, useMotionValue } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import ScrollFloat from "@/components/ScrollFloat";
 
@@ -120,7 +120,6 @@ function ProjectCard({ project, index, isMobile = false }: { project: typeof pro
 
 export default function ProjectSection() {
     const sectionRef = useRef<HTMLDivElement>(null);
-    const scrollContainerRef = useRef<HTMLDivElement>(null);
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {

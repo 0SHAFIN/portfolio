@@ -1,17 +1,10 @@
 "use client";
 
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import RippleGrid from "@/components/RippleGrid";
-import { Fugaz_One } from "next/font/google";
 import TextPressure from "@/components/TextPressure";
 import { SiGithub } from "react-icons/si";
-
-
-const fugazOne = Fugaz_One({
-  subsets: ["latin"],
-  weight: ["400"],
-});
 
 export default function HeroSection() {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -22,6 +15,17 @@ export default function HeroSection() {
   });
   const heroY = useTransform(heroProgress, [0, 1], ["0%", "50%"]);
   const heroOpacity = useTransform(heroProgress, [0, 0.8], [1, 0]);
+
+  // Heavier variable-font weight on desktop; keep the thin look on small screens.
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(min-width: 768px)");
+    const update = () => setIsDesktop(mq.matches);
+    update();
+    mq.addEventListener("change", update);
+    return () => mq.removeEventListener("change", update);
+  }, []);
 
   return (
     <div ref={heroRef} className="relative min-h-screen overflow-hidden pt-20 md:pt-30">
@@ -56,11 +60,11 @@ export default function HeroSection() {
             >
               Hi, my name is
             </motion.p>
-            <motion.h1
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className={`mb-4 text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl drop-shadow-lg ${fugazOne.className}`}
+              className="relative mx-auto mb-4 w-full max-w-md drop-shadow-lg sm:max-w-lg md:max-w-xl"
             >
               <TextPressure
                 text="SHAFIN"
@@ -69,12 +73,14 @@ export default function HeroSection() {
                 stroke={false}
                 width={true}
                 weight={true}
+                minWeight={isDesktop ? 500 : 100}
+                maxWeight={900}
                 italic={true}
                 textColor="#ffffff"
                 strokeColor="#ff0000"
                 minFontSize={36}
               />
-            </motion.h1>
+            </motion.div>
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}

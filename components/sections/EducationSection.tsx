@@ -29,7 +29,7 @@ const education = [
   },
 ];
 
-function EducationItem({ edu, index, isLast }: { edu: typeof education[0]; index: number; isLast: boolean }) {
+function EducationItem({ edu, isLast }: { edu: typeof education[0]; isLast: boolean }) {
   const itemRef = useRef<HTMLDivElement>(null);
 
   const { scrollYProgress } = useScroll({
@@ -187,7 +187,6 @@ export default function EducationSection() {
             <EducationItem
               key={edu.degree}
               edu={edu}
-              index={index}
               isLast={index === education.length - 1}
             />
           ))}

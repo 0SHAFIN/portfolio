@@ -67,7 +67,6 @@ const contactInfo = [
 
 export default function ContactSection() {
   const sectionRef = useRef<HTMLDivElement>(null);
-  const scrollContainerRef = useRef<HTMLDivElement>(null);
 
  const { scrollYProgress: techProgress } = useScroll({
     target: sectionRef,

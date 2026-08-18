@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import ScrollFloat from "@/components/ScrollFloat";
 import { OrbitingCircles } from "@/components/ui/orbiting-circles";
 import {
@@ -87,13 +87,6 @@ const OrbitIcon = ({ children }: { children: React.ReactNode }) => (
 
 export default function TechStackSection() {
   const techRef = useRef<HTMLDivElement>(null);
-  const sectionRef = useRef<HTMLDivElement>(null);
-
-  const { scrollYProgress: techProgress } = useScroll({
-    target: techRef,
-    offset: ["start end", "end start"],
-  });
-  const techY = useTransform(techProgress, [0, 1], ["80px", "-80px"]);
 
   return (
     <section ref={techRef} id="skills" className="py-16 md:py-32 relative overflow-hidden">

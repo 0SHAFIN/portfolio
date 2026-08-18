@@ -8,7 +8,6 @@ import ChromaGrid from "@/components/ChromaGrid";
 
 export default function AboutSection() {
   const aboutRef = useRef<HTMLDivElement>(null);
-  const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   const { scrollYProgress: techProgress } = useScroll({
     target: aboutRef,
