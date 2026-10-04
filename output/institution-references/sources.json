@@ -1,0 +1,17 @@
+[
+  {
+    "slug": "aiub",
+    "url": "https://www.aiub.edu/Files/Templates/AIUBv3/assets/images/aiub-logo-white-border.svg",
+    "ext": "svg"
+  },
+  {
+    "slug": "adamjee-college",
+    "url": "https://acc.edu.bd/assets/media/slide/ACC.png",
+    "ext": "png"
+  },
+  {
+    "slug": "adamjee-school",
+    "url": "https://acps.edu.bd/assets/img/acps-logo.png",
+    "ext": "png"
+  }
+]
