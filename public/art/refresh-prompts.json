@@ -1,0 +1,14 @@
+{
+  "mode": "built-in image_gen",
+  "assets": [
+    {
+      "path": "public/art/pixel-world-blue-hour.png",
+      "prompt": "Use case: stylized-concept. Asset type: wide cinematic full-screen hero background for a pixel-art developer portfolio. Create an atmospheric premium 16-bit pixel-art mountain landscape at blue hour with a winding river, layered distant mountains, dark pine silhouettes, and a small developer explorer sitting with a laptop on a rocky overlook at the lower right. A quiet starry sky with a small pale moon, no giant sun. Palette: charcoal black, desaturated slate blue, muted teal, soft silver fog and natural cool white moonlight. Only a few tiny chartreuse #C9EB00 pixels on the laptop indicator or distant fireflies to connect with the website accent, less than 2 percent of the image. Do not tint the whole scene green, yellow, lime, purple, or orange. Clear deliberate square pixel clusters and crisp stepped edges, not smooth painting. Wide 16:9 composition, left 45 percent naturally dark and uncluttered to support readable white website text, richest scene detail and figure at right. Depth, restraint, luminous river, beautiful moody composition. No text, logos, UI, borders, or watermarks."
+    },
+    {
+      "path": "public/image/photo-pixel.png",
+      "reference": "public/image/photo.webp",
+      "prompt": "Use case: identity-preserve / style-transfer. Input image: edit target is the supplied real beach portrait. Make a VERY LIGHTLY pixelated version of this exact photograph, retaining its photographic realism and identity. Preserve the same person's exact facial structure, sunglasses, hair, skin tone, expression, body proportions, pose, pale sage short-sleeve open shirt, black printed T-shirt including existing graphics, beach, sea, horizon, cloudy sky, composition and framing. Add only subtle small square pixel sampling and slight edge stepping, as if the ORIGINAL photograph was gently downsampled and enlarged with nearest-neighbor. Fine pixel grid approximately 450 pixels across the width, not coarse 32/64-pixel cartoon art. Face must remain clearly recognizable and closely match the input. Maintain natural original photographic colors and lighting. No redesign, beautification, extra details, painted/cartoon face, different clothes, different background, new text, cropping, recoloring, tinted overlays, duotone, green wash, or grayscale. Output same portrait aspect ratio as input, fully opaque."
+    }
+  ]
+}

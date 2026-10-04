@@ -1,0 +1,29 @@
+{
+  "mode": "built-in image_gen",
+  "logos": [
+    {
+      "slug": "aiub",
+      "name": "American International University-Bangladesh",
+      "source": "https://www.aiub.edu/Files/Templates/AIUBv3/assets/images/aiub-logo-white-border.svg",
+      "site": "https://www.aiub.edu/",
+      "prompt": "Use case: style-transfer. Asset type: pixel-art version of an actual educational institution logo, for a developer portfolio education section. Input image: the official American International University-Bangladesh emblem downloaded from its official website, use this as the exact design reference. Recreate the SAME emblem with crisp, clearly visible square pixel edges and subtle fine pixel clusters, nominal 96-by-96 or 128-by-128 pixel artwork enlarged with nearest-neighbor. This is faithful pixelization, not a redesign. Preserve the exact silhouette, proportions, all rings, shields, stars, wreath leaves, book/torch/computer motifs present in this specific reference, and original colors. Preserve existing lettering shapes and numbers visually, including Bengali script if present; do not replace them with invented lettering, English words, or a generic seal. Keep the blue outer ring with yellow institution name, light blue inner field, white shield, book, torch and computer, year 1994, and thin white outside border. Retain solid white/cream colors INSIDE the emblem where present in the reference. Outside the emblem must be genuinely transparent, no rectangle or colored tile. Center the complete emblem on a square canvas with 8 percent margin, no cropping. Flat clear pixel art, no glow, shadows, 3D, distressed texture, smooth vector edges, extra symbols, labels, or watermark.",
+      "asset": "/art/education/aiub.png"
+    },
+    {
+      "slug": "adamjee-college",
+      "name": "Adamjee Cantonment College",
+      "source": "https://acc.edu.bd/assets/media/slide/ACC.png",
+      "site": "https://acc.edu.bd/",
+      "prompt": "Use case: style-transfer. Asset type: pixel-art version of an actual educational institution logo, for a developer portfolio education section. Input image: the official Adamjee Cantonment College emblem downloaded from its official website, use this as the exact design reference. Recreate the SAME emblem with crisp, clearly visible square pixel edges and subtle fine pixel clusters, nominal 96-by-96 or 128-by-128 pixel artwork enlarged with nearest-neighbor. This is faithful pixelization, not a redesign. Preserve the exact silhouette, proportions, all rings, shields, stars, wreath leaves, book/torch/computer motifs present in this specific reference, and original colors. Preserve existing lettering shapes and numbers visually, including Bengali script if present; do not replace them with invented lettering, English words, or a generic seal. Keep the circular cyan outer rim, red Bengali-lettered ring, green inner wreath, dark violet middle, white five-point star, and red/yellow torch. Do not substitute the separate school logo. Retain solid white/cream colors INSIDE the emblem where present in the reference. Outside the emblem must be genuinely transparent, no rectangle or colored tile. Center the complete emblem on a square canvas with 8 percent margin, no cropping. Flat clear pixel art, no glow, shadows, 3D, distressed texture, smooth vector edges, extra symbols, labels, or watermark.",
+      "asset": "/art/education/adamjee-college.png"
+    },
+    {
+      "slug": "adamjee-school",
+      "name": "Adamjee Cantonment Public School",
+      "source": "https://acps.edu.bd/assets/img/acps-logo.png",
+      "site": "https://acps.edu.bd/",
+      "prompt": "Use case: style-transfer. Asset type: pixel-art version of an actual educational institution logo, for a developer portfolio education section. Input image: the official Adamjee Cantonment Public School emblem downloaded from its official website, use this as the exact design reference. Recreate the SAME emblem with crisp, clearly visible square pixel edges and subtle fine pixel clusters, nominal 96-by-96 or 128-by-128 pixel artwork enlarged with nearest-neighbor. This is faithful pixelization, not a redesign. Preserve the exact silhouette, proportions, all rings, shields, stars, wreath leaves, book/torch/computer motifs present in this specific reference, and original colors. Preserve existing lettering shapes and numbers visually, including Bengali script if present; do not replace them with invented lettering, English words, or a generic seal. Keep the green laurel wreath, magenta top star, pale yellow circular field with red Bengali ring lettering, central red candle and blue open book, magenta small stars, and pale pink founding-year ribbon at bottom. Do not substitute the college logo. Retain solid white/cream colors INSIDE the emblem where present in the reference. Outside the emblem must be genuinely transparent, no rectangle or colored tile. Center the complete emblem on a square canvas with 8 percent margin, no cropping. Flat clear pixel art, no glow, shadows, 3D, distressed texture, smooth vector edges, extra symbols, labels, or watermark.",
+      "asset": "/art/education/adamjee-school.png"
+    }
+  ]
+}

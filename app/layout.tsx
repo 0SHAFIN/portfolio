@@ -1,7 +1,21 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import { Fugaz_One, Inter } from "next/font/google";
+import { Fugaz_One, Inter, Chakra_Petch, Silkscreen } from "next/font/google";
+
+const displayFont = Chakra_Petch({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-pixel",
+  display: "swap",
+});
+
+const retroFont = Silkscreen({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-retro",
+  display: "swap",
+});
 
 const fugazOne = Fugaz_One({
   subsets: ["latin"],
@@ -17,7 +31,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Shafin | Full-Stack Developer",
-  description: "Full-stack developer specializing in modern web applications with Next.js, React, and TypeScript. Building clean, accessible, and user-centered digital experiences with advanced animations and interactive UI. Based in Dhaka, Bangladesh.",
+  description:
+    "Full-stack developer specializing in modern web applications with Next.js, React, and TypeScript. Building clean, accessible, and user-centered digital experiences with advanced animations and interactive UI. Based in Dhaka, Bangladesh.",
   keywords: [
     "Full-Stack Developer",
     "Shafin",
@@ -59,11 +74,12 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://shafin.dev",
     title: "Shafin | Full-Stack Developer",
-    description: "Full-stack developer specializing in modern web applications with Next.js, React, and TypeScript. Creating seamless digital experiences with advanced animations and interactive UI.",
+    description:
+      "Full-stack developer specializing in modern web applications with Next.js, React, and TypeScript. Creating seamless digital experiences with advanced animations and interactive UI.",
     siteName: "Shafin's Portfolio",
     images: [
       {
-        url: "/logo.png",
+        url: "/brand/shafin-social.png",
         width: 1200,
         height: 630,
         alt: "Shafin - Full-Stack Developer Portfolio",
@@ -73,8 +89,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Shafin | Full-Stack Developer",
-    description: "Full-stack developer specializing in modern web applications with Next.js, React, and TypeScript. Creating seamless digital experiences through end-to-end development.",
-    images: ["/logo.png"],
+    description:
+      "Full-stack developer specializing in modern web applications with Next.js, React, and TypeScript. Creating seamless digital experiences through end-to-end development.",
+    images: ["/brand/shafin-social.png"],
     creator: "@shafin",
   },
   robots: {
@@ -98,21 +115,25 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/fevicon/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/fevicon/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-      { url: "/fevicon/favicon.ico", sizes: "any" },
+      { url: "/brand/icon-16.png", sizes: "16x16", type: "image/png" },
+      { url: "/brand/icon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/brand/favicon.ico", sizes: "any" },
     ],
     apple: [
-      { url: "/fevicon/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+      {
+        url: "/brand/apple-touch-icon.png",
+        sizes: "180x180",
+        type: "image/png",
+      },
     ],
     other: [
       {
         rel: "android-chrome-192x192",
-        url: "/fevicon/android-chrome-192x192.png",
+        url: "/brand/icon-192.png",
       },
       {
         rel: "android-chrome-512x512",
-        url: "/fevicon/android-chrome-512x512.png",
+        url: "/brand/icon-512.png",
       },
     ],
   },
@@ -126,7 +147,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} ${fugazOne.variable} antialiased`}
+        className={`${inter.className} ${fugazOne.variable} ${displayFont.variable} ${retroFont.variable} antialiased`}
       >
         <Navbar />
         {children}
