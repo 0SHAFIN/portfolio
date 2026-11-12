@@ -40,3 +40,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Parallax development artifacts
+/playwright-report/
+/test-results/
+/artifacts/
+/artifacts-*.png

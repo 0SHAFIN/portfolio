@@ -1,0 +1,10 @@
+Mode: built-in image_gen. Revised approval preview; not installed in website.
+Output: design/previews/journey-education-logo-v2.png
+
+Use case: precise-object-edit.
+Edit the supplied portfolio illustration (image 1). Image 2 is the official logo reference to preserve its identity.
+User feedback: the background has too many things. Make the scene dramatically simpler, calmer, and less busy.
+Keep the central upright AIUB circular emblem as the dominant subject, with its recognizable official blue/yellow colors, pale blue field, white shield, book, flame, computer, lettering and 1994. Preserve its crisp pixel-art treatment and warm cream stone rim. Match the original logo reference accurately.
+Replace ALL the elaborate surrounding campus, buildings, dome, trees, lanterns, flowers, stairs, winding paths and elaborate pedestal with a very restrained composition: a nearly flat pale mint background with only extremely subtle pixel color variation; one small simple low cream stone base immediately beneath the emblem; a short patch of sage grass below that base, at most two tiny understated grass tufts. No other props or scenery.
+The empty pale mint backdrop should occupy at least 60 percent of the total image area. The logo diameter should be about 57 percent of the image height, centered horizontally, positioned slightly above the vertical center with its low base beneath it. Leave generous empty space around the logo, fully within crop-safe central region. The logo and simple base are the only focal objects.
+Maintain the portfolio's crisp square pixel clusters, deliberate stepped edges, soft warm light and limited environment palette of mint, sage and cream. Opaque landscape image 1536x1024, 3:2. Flat 2D pixel-art illustration, no realistic photography, no glossy 3D rendering. Do not add text outside the logo, UI, borders, characters, mountains, clouds, ornamental framing or extra symbols. ONE revised image.

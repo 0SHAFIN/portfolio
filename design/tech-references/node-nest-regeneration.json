@@ -1,0 +1,14 @@
+{
+  "mode": "built-in image_gen",
+  "styleReference": "design/source-art/tech-react.png",
+  "assets": [
+    {
+      "id": "nodejs",
+      "prompt": "Use case: style-transfer. Regenerate ONE Node.js technology icon for a pixel-art developer portfolio. Image 1 is the exact Node.js logo to preserve: the green upright regular hexagonal gemstone, three restrained green facets, no letters. Image 2 is the approved pixel-art treatment from another technology icon, STYLE ONLY; do not copy its atom shape. Match its clean 16-bit inventory sprite artwork, square stepped edges, dark green single-pixel contour and subtle light-green highlight. Preserve the first image's exact hexagonal silhouette and facet structure. Flat frontal view, regular symmetric shape, no perspective tilt. No noise, chips, cracks, speckling, stray pixels, glow, excessive shading, text, scenery or pedestal. Strong simple solid color regions, legible at 36px. Icon occupies 80% of square canvas with equal transparent padding all around. Genuinely transparent background and transparent outside edges, not a colored tile. One icon only."
+    },
+    {
+      "id": "nestjs",
+      "prompt": "Use case: style-transfer. Regenerate ONE NestJS technology icon for a pixel-art developer portfolio. Image 1 is the exact NestJS logo; preserve its recognizable left-facing red feline head silhouette, flame-like ear tuft, curled lower neck/tail and sweeping outer mane. Preserve every important negative space and original proportions. Image 2 is the approved pixel-art treatment from another technology icon, STYLE ONLY; do not copy its atom shape. Match its clean 16-bit inventory sprite artwork with deliberate square stepped edges, restrained dark red contour and a few light coral edge highlights. Use broad solid crimson color regions, keep silhouette clear at 36px. Do not invent eyes, extra teeth, horns, limbs, spikes, or additional curls. No noisy texture, holes inside solid regions, fractures, loose pixels, black speckles, glow, scenery, text or pedestal. Flat frontal emblem, no perspective tilt. Logo occupies 80% of square canvas with equal transparent padding. Genuinely transparent background. One logo only."
+    }
+  ]
+}

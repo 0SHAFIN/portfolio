@@ -1,0 +1,598 @@
+/* The hero is a living scene: an eight-pose runner over a wind-displaced world. */
+@property --night-mix {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 0;
+}
+
+.portfolio {
+  --night-mix: 0;
+  --world-contrast: clamp(0, (var(--night-mix) - 0.48) * 20, 1);
+  --world-ink: color-mix(
+    in srgb,
+    #203c32,
+    #f7f2df calc(var(--world-contrast) * 100%)
+  );
+}
+.hero-world-scene,
+.world-canvas,
+.world-fallback-night {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+}
+.hero {
+  overflow: hidden;
+}
+.hero .landscape {
+  inset: 0;
+  will-change: auto;
+}
+.hero .landscape img {
+  object-position: center;
+}
+.hero .pixel-edge {
+  bottom: 0;
+  height: 4px;
+  clip-path: none;
+}
+.world-bar {
+  position: relative;
+  z-index: 1;
+  isolation: isolate;
+  background: var(--forest);
+}
+.hero-world-scene {
+  overflow: hidden;
+}
+.world-canvas {
+  opacity: 0;
+  pointer-events: none;
+  image-rendering: pixelated;
+  transition: opacity 0.7s;
+}
+.world-ready .world-canvas {
+  opacity: 1;
+}
+.world-fallback-night {
+  background: url("/art/adventure-valley-night.webp") center / cover;
+  opacity: var(--night-mix);
+  pointer-events: none;
+}
+.header,
+.hero .hero-copy,
+.hero .hero-side-note {
+  color: var(--world-ink);
+}
+.header {
+  border-bottom: 0;
+}
+.header .brand {
+  --logo-face: #f7f2df;
+  color: #173e35;
+  background: #f7f2df;
+  padding: 10px 13px;
+  border-radius: 7px;
+  box-shadow: 0 2px 8px #173e3514;
+}
+.hero h1,
+.hero .hero-description {
+  color: var(--world-ink);
+}
+.hero .hero-description {
+  text-shadow: 0 1px 6px
+    color-mix(in srgb, transparent, #102039 calc(var(--night-mix) * 35%));
+}
+.header .button,
+.hero .button {
+  color: var(--ink);
+}
+.header .mobile-menu {
+  color: var(--ink);
+  background: color-mix(
+    in srgb,
+    rgba(247, 242, 223, 0.4),
+    #f7f2df calc(var(--night-mix) * 100%)
+  );
+}
+.header .navigation > a:not(.button):after {
+  background: currentColor;
+}
+.hero .pixel-cloud {
+  height: auto;
+  opacity: calc(0.44 - var(--night-mix) * 0.3);
+  filter: brightness(calc(1 - var(--night-mix) * 0.6));
+}
+.hero .ambient-particles {
+  z-index: 3;
+}
+.hero .hero-kicker .status-light {
+  background: color-mix(
+    in srgb,
+    #698e4d,
+    #dce8a0 calc(var(--night-mix) * 100%)
+  );
+}
+
+.hero .hero-run-track {
+  --byte-body-anchor: 0.7;
+  position: absolute;
+  left: 50%;
+  bottom: 9%;
+  width: 190px;
+  height: 190px;
+  z-index: 6;
+  transform: translateX(calc(var(--byte-body-anchor) * -100%));
+}
+.hero-run-track .hero-explorer {
+  position: relative;
+  inset: auto;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(3px 4px 0 rgba(12, 28, 23, 0.2));
+}
+.hero-run-track .explorer-button {
+  position: relative;
+  width: 190px;
+  height: 190px;
+  isolation: isolate;
+  filter: brightness(calc(1 - var(--night-mix) * 0.16));
+}
+.byte-run-sprite,
+.map-byte::before {
+  position: absolute;
+  /* 512px packed cell = 444px original frame plus 34px padding per side.
+     Extend the image layer to preserve the character's size and body anchor. */
+  inset: -7.6576576577%;
+  display: block;
+  background: url("/art/byte-run-cycle-isolated.webp") 0% 0% / 400% 200% no-repeat;
+  image-rendering: pixelated;
+  animation: byte-footfalls 0.8s steps(1, end) infinite;
+}
+.map-byte::before {
+  content: "";
+}
+.runner-shadow {
+  position: absolute;
+  bottom: 3%;
+  left: 42%;
+  width: 49%;
+  height: 7%;
+  background: rgba(8, 25, 22, 0.25);
+  border-radius: 50%;
+  z-index: -1;
+  animation: footfall-shadow 0.4s ease-in-out infinite;
+}
+.runner-dust {
+  position: absolute;
+  bottom: 6%;
+  left: 42%;
+  pointer-events: none;
+}
+.runner-dust i {
+  position: absolute;
+  height: 4px;
+  width: 4px;
+  background: #d3cc98;
+  opacity: 0;
+  animation: footfall-dust 0.8s linear infinite;
+}
+.runner-dust i:nth-child(2) {
+  animation-delay: 0.26s;
+  width: 3px;
+  height: 3px;
+}
+.runner-dust i:nth-child(3) {
+  animation-delay: 0.53s;
+}
+.hero .explorer-hint {
+  left: calc(var(--byte-body-anchor) * 100%);
+  bottom: -18px;
+  font-size: 12px;
+}
+.explorer-speech {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  pointer-events: none;
+}
+.explorer-bubble-slot {
+  position: absolute;
+  left: calc(var(--byte-body-anchor) * 100%);
+  width: max-content;
+  max-width: min(210px, calc(100vw - 48px));
+  bottom: calc(100% + 16px);
+}
+.explorer-bubble-slot[data-position="upper-left"] {
+  margin-left: 24px;
+  transform: translateX(-100%);
+}
+.explorer-bubble-slot[data-position="upper-right"] {
+  margin-left: -24px;
+  bottom: calc(100% + 30px);
+}
+.explorer-bubble-slot[data-position="above"] {
+  transform: translateX(-50%);
+  bottom: calc(100% + 58px);
+}
+.explorer-bubble-slot[data-position="side-left"],
+.explorer-bubble-slot[data-position="side-right"] {
+  max-width: min(205px, calc(50vw - 48px));
+  bottom: 68%;
+}
+.explorer-bubble-slot[data-position="side-left"] {
+  margin-left: -35px;
+  transform: translateX(-100%);
+}
+.explorer-bubble-slot[data-position="side-right"] {
+  margin-left: 35px;
+}
+.hero-run-track .explorer-bubble {
+  position: relative;
+  inset: auto;
+  width: auto;
+  padding: 10px 14px;
+  font-size: 12px;
+  line-height: 1.55;
+  color: var(--forest);
+  white-space: normal;
+  text-align: center;
+  opacity: 1;
+  transform: none;
+  transition: none;
+  animation-duration: 2.8s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+  transform-origin: bottom center;
+}
+.explorer-bubble-slot[data-position="upper-left"] .explorer-bubble:after {
+  left: auto;
+  right: 20px;
+}
+.explorer-bubble-slot[data-position="upper-right"] .explorer-bubble:after {
+  left: 20px;
+}
+.explorer-bubble-slot[data-position="side-left"] .explorer-bubble:after {
+  inset: auto -7px 12px auto;
+  transform: rotate(-45deg);
+}
+.explorer-bubble-slot[data-position="side-right"] .explorer-bubble:after {
+  inset: auto auto 12px -7px;
+  transform: rotate(135deg);
+}
+.speech-pop {
+  animation-name: speech-pop;
+}
+.speech-slide {
+  animation-name: speech-slide;
+}
+.speech-bounce {
+  animation-name: speech-bounce;
+}
+.speech-flip {
+  animation-name: speech-flip;
+}
+.speech-pixel {
+  animation-name: speech-pixel;
+  animation-timing-function: steps(5, end);
+}
+.is-paused .explorer-bubble {
+  animation: none !important;
+  opacity: 1;
+  transform: none;
+}
+@keyframes speech-pop {
+  0% {
+    opacity: 0;
+    transform: translateY(15px) scale(0.55) rotate(-8deg);
+  }
+  11% {
+    opacity: 1;
+    transform: translateY(-4px) scale(1.08) rotate(3deg);
+  }
+  19%,
+  86% {
+    opacity: 1;
+    transform: none;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-12px) scale(0.93);
+  }
+}
+@keyframes speech-slide {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px) rotate(-4deg);
+  }
+  14% {
+    opacity: 1;
+    transform: translateX(5px) rotate(1deg);
+  }
+  23%,
+  86% {
+    opacity: 1;
+    transform: none;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(16px);
+  }
+}
+@keyframes speech-bounce {
+  0% {
+    opacity: 0;
+    transform: translateY(-28px);
+  }
+  12% {
+    opacity: 1;
+    transform: translateY(7px);
+  }
+  20% {
+    transform: translateY(-4px);
+  }
+  27%,
+  86% {
+    opacity: 1;
+    transform: none;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-16px);
+  }
+}
+@keyframes speech-flip {
+  0% {
+    opacity: 0;
+    transform: perspective(400px) rotateX(75deg) scale(0.85);
+  }
+  15% {
+    opacity: 1;
+    transform: perspective(400px) rotateX(-12deg);
+  }
+  25%,
+  86% {
+    opacity: 1;
+    transform: none;
+  }
+  100% {
+    opacity: 0;
+    transform: perspective(400px) rotateX(20deg) translateY(-8px);
+  }
+}
+@keyframes speech-pixel {
+  0% {
+    opacity: 0;
+    clip-path: inset(0 100% 0 0);
+    transform: translateY(10px);
+  }
+  16%,
+  86% {
+    opacity: 1;
+    clip-path: inset(0);
+    transform: none;
+  }
+  100% {
+    opacity: 0;
+    clip-path: inset(0 0 100% 0);
+    transform: translateY(-8px);
+  }
+}
+
+.world-light-controls {
+  position: absolute;
+  left: 4%;
+  bottom: 100px;
+  z-index: 8;
+  color: #f7f2df;
+  font-family: var(--font-mono), monospace;
+}
+.world-live-label {
+  font-size: 12px;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px #173e35;
+}
+.world-live-label .status-light {
+  width: 4px;
+  height: 4px;
+  background: #dbe5a8;
+}
+.world-light-controls > div {
+  display: flex;
+  gap: 1px;
+  padding: 3px;
+  background: rgba(19, 42, 36, 0.82);
+  border: 1px solid rgba(247, 242, 223, 0.35);
+  border-radius: 5px;
+  backdrop-filter: blur(8px);
+}
+.world-light-controls button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 11px;
+  min-height: 34px;
+  background: transparent;
+  color: #d3ddca;
+  font-size: 12px;
+  letter-spacing: 0.7px;
+  border-radius: 3px;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+.world-light-controls button[aria-pressed="true"] {
+  background: #dce4c8;
+  color: #173e35;
+}
+.world-light-controls button:hover {
+  background: rgba(247, 242, 223, 0.18);
+  color: #fff3d3;
+}
+.world-light-controls button[aria-pressed="true"]:hover {
+  background: #e7edda;
+  color: #173e35;
+}
+.portfolio[data-world-fallback="true"][data-world-mode="auto"] {
+  animation: fallback-day-night 36s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+}
+.portfolio[data-world-fallback="true"] {
+  transition: --night-mix 4.8s cubic-bezier(0.45, 0, 0.55, 1);
+}
+.portfolio.is-paused {
+  animation-play-state: paused !important;
+}
+
+@keyframes byte-footfalls {
+  0% {
+    background-position: 0% 0%;
+  }
+  12.5% {
+    background-position: 33.333333% 0%;
+  }
+  25% {
+    background-position: 66.666667% 0%;
+  }
+  37.5% {
+    background-position: 100% 0%;
+  }
+  50% {
+    background-position: 0% 100%;
+  }
+  62.5% {
+    background-position: 33.333333% 100%;
+  }
+  75% {
+    background-position: 66.666667% 100%;
+  }
+  87.5% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+@keyframes footfall-shadow {
+  0%,
+  100% {
+    transform: scaleX(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scaleX(0.8);
+    opacity: 0.55;
+  }
+}
+@keyframes footfall-dust {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translate(-35px, -15px);
+    opacity: 0;
+  }
+}
+@keyframes fallback-day-night {
+  0%,
+  14%,
+  92%,
+  100% {
+    --night-mix: 0;
+  }
+  36%,
+  64% {
+    --night-mix: 1;
+  }
+}
+
+@media (max-width: 800px) {
+  .hero .hero-run-track {
+    bottom: 10.5%;
+  }
+  .world-light-controls {
+    left: 5%;
+    bottom: 88px;
+  }
+}
+@media (max-width: 600px) {
+  .explorer-bubble-slot {
+    bottom: calc(100% + 24px);
+  }
+  .hero-run-track .explorer-bubble {
+    font-size: 12px;
+    padding: 9px 11px;
+  }
+  .explorer-bubble-slot[data-position="side-left"] {
+    bottom: calc(100% + 48px);
+  }
+  .explorer-bubble-slot[data-position="side-right"] {
+    bottom: calc(100% + 72px);
+  }
+  .explorer-bubble-slot[data-position="side-left"] .explorer-bubble:after {
+    inset: auto 16px -8px auto;
+    transform: rotate(45deg);
+  }
+  .explorer-bubble-slot[data-position="side-right"] .explorer-bubble:after {
+    inset: auto auto -8px 16px;
+    transform: rotate(45deg);
+  }
+  .hero .gem-0 {
+    bottom: 36%;
+  }
+  .hero .hero-run-track {
+    width: 156px;
+    height: 156px;
+    bottom: 11%;
+  }
+  .hero-run-track .explorer-button {
+    width: 156px;
+    height: 156px;
+  }
+  .hero .explorer-hint {
+    font-size: 12px;
+    bottom: -15px;
+  }
+  .world-light-controls {
+    left: 6%;
+    bottom: 216px;
+  }
+  .world-live-label {
+    font-size: 12px;
+    margin-bottom: 7px;
+    gap: 6px;
+    letter-spacing: 0.5px;
+  }
+  .world-light-controls button {
+    padding: 7px 9px;
+    gap: 5px;
+    min-height: 32px;
+    font-size: 12px;
+  }
+  .world-light-controls button svg {
+    height: 12px;
+    width: 12px;
+  }
+  .header .navigation {
+    color: var(--ink);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero .hero-run-track {
+    animation: none;
+  }
+  .world-canvas {
+    transition: none;
+  }
+  .world-live-label:before {
+    animation: none;
+  }
+}

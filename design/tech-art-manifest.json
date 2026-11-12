@@ -1,0 +1,208 @@
+{
+  "mode": "built-in image_gen",
+  "referenceLibrary": "https://devicon.dev/",
+  "styleReference": "design/previews/journey-education-logo-v2.png",
+  "assets": [
+    {
+      "name": "Next.js",
+      "id": "nextjs",
+      "reference": "design/tech-references/nextjs.png",
+      "source": "design/source-art/tech-nextjs.png",
+      "production": "public/art/tech/nextjs.webp",
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg",
+      "prompt": "Use case: stylized-concept. Produce ONE small technology inventory icon for a pixel-art adventure developer portfolio. Reference image 1 is the exact Next.js logo; preserve its silhouette, recognizable shapes, proportions and original brand colors faithfully. Reference image 2 is the portfolio's approved art style. Apply that crisp 16-bit square-pixel craft to the LOGO ONLY. Center a single large Next.js mark occupying 78% of a square canvas. Clear stepped pixel edges, restrained 2-tone pixel shading, minimal details; readable when downscaled to 40px. No scenery, pedestal, grass, buildings, decorative objects, extra letters, or background tile. Do not include the AIUB emblem. No wordmark except letters already essential to the referenced mark.   Palette preserves recognizable brand color with dark forest edge accents where needed. This is a clean tiny inventory sprite, not an elaborate painting. Exactly one icon on genuinely transparent background with alpha. Output square 1024x1024."
+    },
+    {
+      "name": "React",
+      "id": "react",
+      "reference": "design/tech-references/react.png",
+      "source": "design/source-art/tech-react.png",
+      "production": "public/art/tech/react.webp",
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg",
+      "prompt": "Use case: stylized-concept. Produce ONE small technology inventory icon for a pixel-art adventure developer portfolio. Reference image 1 is the exact React logo; preserve its silhouette, recognizable shapes, proportions and original brand colors faithfully. Reference image 2 is the portfolio's approved art style. Apply that crisp 16-bit square-pixel craft to the LOGO ONLY. Center a single large React mark occupying 78% of a square canvas. Clear stepped pixel edges, restrained 2-tone pixel shading, minimal details; readable when downscaled to 40px. No scenery, pedestal, grass, buildings, decorative objects, extra letters, or background tile. Do not include the AIUB emblem. No wordmark except letters already essential to the referenced mark.   Palette preserves recognizable brand color with dark forest edge accents where needed. This is a clean tiny inventory sprite, not an elaborate painting. Exactly one icon on genuinely transparent background with alpha. Output square 1024x1024."
+    },
+    {
+      "name": "TypeScript",
+      "id": "typescript",
+      "reference": "design/tech-references/typescript.png",
+      "source": "design/source-art/tech-typescript.png",
+      "production": "public/art/tech/typescript.webp",
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
+      "prompt": "Use case: stylized-concept. Produce ONE small technology inventory icon for a pixel-art adventure developer portfolio. Reference image 1 is the exact TypeScript logo; preserve its silhouette, recognizable shapes, proportions and original brand colors faithfully. Reference image 2 is the portfolio's approved art style. Apply that crisp 16-bit square-pixel craft to the LOGO ONLY. Center a single large TypeScript mark occupying 78% of a square canvas. Clear stepped pixel edges, restrained 2-tone pixel shading, minimal details; readable when downscaled to 40px. No scenery, pedestal, grass, buildings, decorative objects, extra letters, or background tile. Do not include the AIUB emblem. No wordmark except letters already essential to the referenced mark.   Palette preserves recognizable brand color with dark forest edge accents where needed. This is a clean tiny inventory sprite, not an elaborate painting. Exactly one icon on genuinely transparent background with alpha. Output square 1024x1024."
+    },
+    {
+      "name": "JavaScript",
+      "id": "javascript",
+      "reference": "design/tech-references/javascript.png",
+      "source": "design/source-art/tech-javascript.png",
+      "production": "public/art/tech/javascript.webp",
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+      "prompt": "Use case: stylized-concept. Produce ONE small technology inventory icon for a pixel-art adventure developer portfolio. Reference image 1 is the exact JavaScript logo; preserve its silhouette, recognizable shapes, proportions and original brand colors faithfully. Reference image 2 is the portfolio's approved art style. Apply that crisp 16-bit square-pixel craft to the LOGO ONLY. Center a single large JavaScript mark occupying 78% of a square canvas. Clear stepped pixel edges, restrained 2-tone pixel shading, minimal details; readable when downscaled to 40px. No scenery, pedestal, grass, buildings, decorative objects, extra letters, or background tile. Do not include the AIUB emblem. No wordmark except letters already essential to the referenced mark.   Palette preserves recognizable brand color with dark forest edge accents where needed. This is a clean tiny inventory sprite, not an elaborate painting. Exactly one icon on genuinely transparent background with alpha. Output square 1024x1024."
+    },
+    {
+      "name": "Tailwind CSS",
+      "id": "tailwindcss",
+      "reference": "design/tech-references/tailwindcss.png",
+      "source": "design/source-art/tech-tailwindcss.png",
+      "production": "public/art/tech/tailwindcss.webp",
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg",
+      "prompt": "Use case: stylized-concept. Produce ONE small technology inventory icon for a pixel-art adventure developer portfolio. Reference image 1 is the exact Tailwind CSS logo; preserve its silhouette, recognizable shapes, proportions and original brand colors faithfully. Reference image 2 is the portfolio's approved art style. Apply that crisp 16-bit square-pixel craft to the LOGO ONLY. Center a single large Tailwind CSS mark occupying 78% of a square canvas. Clear stepped pixel edges, restrained 2-tone pixel shading, minimal details; readable when downscaled to 40px. No scenery, pedestal, grass, buildings, decorative objects, extra letters, or background tile. Do not include the AIUB emblem. No wordmark except letters already essential to the referenced mark.   Palette preserves recognizable brand color with dark forest edge accents where needed. This is a clean tiny inventory sprite, not an elaborate painting. Exactly one icon on genuinely transparent background with alpha. Output square 1024x1024."
+    },
+    {
+      "name": "Framer Motion",
+      "id": "framermotion",
+      "reference": "design/tech-references/framermotion.png",
+      "source": "design/source-art/tech-framermotion.png",
+      "production": "public/art/tech/framermotion.webp",
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/motion/motion-original.svg",
+      "prompt": "Use case: stylized-concept. Produce ONE small technology inventory icon for a pixel-art adventure developer portfolio. Reference image 1 is the exact Framer Motion logo; preserve its silhouette, recognizable shapes, proportions and original brand colors faithfully. Reference image 2 is the portfolio's approved art style. Apply that crisp 16-bit square-pixel craft to the LOGO ONLY. Center a single large Framer Motion mark occupying 78% of a square canvas. Clear stepped pixel edges, restrained 2-tone pixel shading, minimal details; readable when downscaled to 40px. No scenery, pedestal, grass, buildings, decorative objects, extra letters, or background tile. Do not include the AIUB emblem. No wordmark except letters already essential to the referenced mark.  Keep the Motion logo's diagonal speed-ribbon M shape. Palette preserves recognizable brand color with dark forest edge accents where needed. This is a clean tiny inventory sprite, not an elaborate painting. Exactly one icon on genuinely transparent background with alpha. Output square 1024x1024."
+    },
+    {
+      "name": "Flutter",
+      "id": "flutter",
+      "reference": "design/tech-references/flutter.png",
+      "source": "design/source-art/tech-flutter.png",
+      "production": "public/art/tech/flutter.webp",
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/flutter/flutter-original.svg",
+      "prompt": "Use case: stylized-concept. Produce ONE small technology inventory icon for a pixel-art adventure developer portfolio. Reference image 1 is the exact Flutter logo; preserve its silhouette, recognizable shapes, proportions and original brand colors faithfully. Reference image 2 is the portfolio's approved art style. Apply that crisp 16-bit square-pixel craft to the LOGO ONLY. Center a single large Flutter mark occupying 78% of a square canvas. Clear stepped pixel edges, restrained 2-tone pixel shading, minimal details; readable when downscaled to 40px. No scenery, pedestal, grass, buildings, decorative objects, extra letters, or background tile. Do not include the AIUB emblem. No wordmark except letters already essential to the referenced mark.   Palette preserves recognizable brand color with dark forest edge accents where needed. This is a clean tiny inventory sprite, not an elaborate painting. Exactly one icon on genuinely transparent background with alpha. Output square 1024x1024."
+    },
+    {
+      "name": "Node.js",
+      "id": "nodejs",
+      "reference": "design/tech-references/nodejs.png",
+      "source": "design/source-art/tech-nodejs-v2.png",
+      "production": "public/art/tech/nodejs-v2.webp",
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg",
+      "prompt": "Use case: style-transfer. Regenerate ONE Node.js technology icon for a pixel-art developer portfolio. Image 1 is the exact Node.js logo to preserve: the green upright regular hexagonal gemstone, three restrained green facets, no letters. Image 2 is the approved pixel-art treatment from another technology icon, STYLE ONLY; do not copy its atom shape. Match its clean 16-bit inventory sprite artwork, square stepped edges, dark green single-pixel contour and subtle light-green highlight. Preserve the first image's exact hexagonal silhouette and facet structure. Flat frontal view, regular symmetric shape, no perspective tilt. No noise, chips, cracks, speckling, stray pixels, glow, excessive shading, text, scenery or pedestal. Strong simple solid color regions, legible at 36px. Icon occupies 80% of square canvas with equal transparent padding all around. Genuinely transparent background and transparent outside edges, not a colored tile. One icon only.",
+      "styleReference": "design/source-art/tech-react.png"
+    },
+    {
+      "name": "NestJS",
+      "id": "nestjs",
+      "reference": "design/tech-references/nestjs.png",
+      "source": "design/source-art/tech-nestjs-v2.png",
+      "production": "public/art/tech/nestjs-v2.webp",
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nestjs/nestjs-original.svg",
+      "prompt": "Use case: style-transfer. Regenerate ONE NestJS technology icon for a pixel-art developer portfolio. Image 1 is the exact NestJS logo; preserve its recognizable left-facing red feline head silhouette, flame-like ear tuft, curled lower neck/tail and sweeping outer mane. Preserve every important negative space and original proportions. Image 2 is the approved pixel-art treatment from another technology icon, STYLE ONLY; do not copy its atom shape. Match its clean 16-bit inventory sprite artwork with deliberate square stepped edges, restrained dark red contour and a few light coral edge highlights. Use broad solid crimson color regions, keep silhouette clear at 36px. Do not invent eyes, extra teeth, horns, limbs, spikes, or additional curls. No noisy texture, holes inside solid regions, fractures, loose pixels, black speckles, glow, scenery, text or pedestal. Flat frontal emblem, no perspective tilt. Logo occupies 80% of square canvas with equal transparent padding. Genuinely transparent background. One logo only.",
+      "styleReference": "design/source-art/tech-react.png"
+    },
+    {
+      "name": "Express",
+      "id": "express",
+      "reference": "design/tech-references/express.png",
+      "source": "design/source-art/tech-express.png",
+      "production": "public/art/tech/express.webp",
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg",
+      "prompt": "Use case: stylized-concept. Produce ONE small technology inventory icon for a pixel-art adventure developer portfolio. Reference image 1 is the exact Express logo; preserve its silhouette, recognizable shapes, proportions and original brand colors faithfully. Reference image 2 is the portfolio's approved art style. Apply that crisp 16-bit square-pixel craft to the LOGO ONLY. Center a single large Express mark occupying 78% of a square canvas. Clear stepped pixel edges, restrained 2-tone pixel shading, minimal details; readable when downscaled to 40px. No scenery, pedestal, grass, buildings, decorative objects, extra letters, or background tile. Do not include the AIUB emblem. No wordmark except letters already essential to the referenced mark. Keep the distinctive black 'ex' Express mark.  Palette preserves recognizable brand color with dark forest edge accents where needed. This is a clean tiny inventory sprite, not an elaborate painting. Exactly one icon on genuinely transparent background with alpha. Output square 1024x1024.",
+      "cleanupPrompt": "design/tech-references/express-cleanup.prompt.txt"
+    },
+    {
+      "name": "PostgreSQL",
+      "id": "postgresql",
+      "reference": "design/tech-references/postgresql.png",
+      "source": "design/source-art/tech-postgresql.png",
+      "production": "public/art/tech/postgresql.webp",
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg",
+      "prompt": "Use case: stylized-concept. Produce ONE small technology inventory icon for a pixel-art adventure developer portfolio. Reference image 1 is the exact PostgreSQL logo; preserve its silhouette, recognizable shapes, proportions and original brand colors faithfully. Reference image 2 is the portfolio's approved art style. Apply that crisp 16-bit square-pixel craft to the LOGO ONLY. Center a single large PostgreSQL mark occupying 78% of a square canvas. Clear stepped pixel edges, restrained 2-tone pixel shading, minimal details; readable when downscaled to 40px. No scenery, pedestal, grass, buildings, decorative objects, extra letters, or background tile. Do not include the AIUB emblem. No wordmark except letters already essential to the referenced mark.   Palette preserves recognizable brand color with dark forest edge accents where needed. This is a clean tiny inventory sprite, not an elaborate painting. Exactly one icon on genuinely transparent background with alpha. Output square 1024x1024."
+    },
+    {
+      "name": "Prisma",
+      "id": "prisma",
+      "reference": "design/tech-references/prisma.png",
+      "source": "design/source-art/tech-prisma.png",
+      "production": "public/art/tech/prisma.webp",
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/prisma/prisma-original.svg",
+      "prompt": "Use case: stylized-concept. Produce ONE small technology inventory icon for a pixel-art adventure developer portfolio. Reference image 1 is the exact Prisma logo; preserve its silhouette, recognizable shapes, proportions and original brand colors faithfully. Reference image 2 is the portfolio's approved art style. Apply that crisp 16-bit square-pixel craft to the LOGO ONLY. Center a single large Prisma mark occupying 78% of a square canvas. Clear stepped pixel edges, restrained 2-tone pixel shading, minimal details; readable when downscaled to 40px. No scenery, pedestal, grass, buildings, decorative objects, extra letters, or background tile. Do not include the AIUB emblem. No wordmark except letters already essential to the referenced mark.   Palette preserves recognizable brand color with dark forest edge accents where needed. This is a clean tiny inventory sprite, not an elaborate painting. Exactly one icon on genuinely transparent background with alpha. Output square 1024x1024."
+    },
+    {
+      "name": "REST API",
+      "id": "rest-api",
+      "reference": "design/tech-references/rest-api.png",
+      "source": "design/source-art/tech-rest-api.png",
+      "production": "public/art/tech/rest-api.webp",
+      "url": null,
+      "prompt": "Use case: stylized-concept. Produce ONE small technology inventory icon for a pixel-art adventure developer portfolio. Reference image 1 is the exact REST API generic REST API connection symbol (not a brand logo); preserve its silhouette, recognizable shapes, proportions and original brand colors faithfully. Reference image 2 is the portfolio's approved art style. Apply that crisp 16-bit square-pixel craft to the LOGO ONLY. Center a single large REST API mark occupying 78% of a square canvas. Clear stepped pixel edges, restrained 2-tone pixel shading, minimal details; readable when downscaled to 40px. No scenery, pedestal, grass, buildings, decorative objects, extra letters, or background tile. Do not include the AIUB emblem. No wordmark except letters already essential to the referenced mark.   Palette preserves recognizable brand color with dark forest edge accents where needed. This is a clean tiny inventory sprite, not an elaborate painting. Exactly one icon on genuinely transparent background with alpha. Output square 1024x1024."
+    },
+    {
+      "name": "Python",
+      "id": "python",
+      "reference": "design/tech-references/python.png",
+      "source": "design/source-art/tech-python.png",
+      "production": "public/art/tech/python.webp",
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+      "prompt": "Use case: stylized-concept. Produce ONE small technology inventory icon for a pixel-art adventure developer portfolio. Reference image 1 is the exact Python logo; preserve its silhouette, recognizable shapes, proportions and original brand colors faithfully. Reference image 2 is the portfolio's approved art style. Apply that crisp 16-bit square-pixel craft to the LOGO ONLY. Center a single large Python mark occupying 78% of a square canvas. Clear stepped pixel edges, restrained 2-tone pixel shading, minimal details; readable when downscaled to 40px. No scenery, pedestal, grass, buildings, decorative objects, extra letters, or background tile. Do not include the AIUB emblem. No wordmark except letters already essential to the referenced mark.   Palette preserves recognizable brand color with dark forest edge accents where needed. This is a clean tiny inventory sprite, not an elaborate painting. Exactly one icon on genuinely transparent background with alpha. Output square 1024x1024."
+    },
+    {
+      "name": "C++",
+      "id": "cplusplus",
+      "reference": "design/tech-references/cplusplus.png",
+      "source": "design/source-art/tech-cplusplus.png",
+      "production": "public/art/tech/cplusplus.webp",
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg",
+      "prompt": "Use case: stylized-concept. Produce ONE small technology inventory icon for a pixel-art adventure developer portfolio. Reference image 1 is the exact C++ logo; preserve its silhouette, recognizable shapes, proportions and original brand colors faithfully. Reference image 2 is the portfolio's approved art style. Apply that crisp 16-bit square-pixel craft to the LOGO ONLY. Center a single large C++ mark occupying 78% of a square canvas. Clear stepped pixel edges, restrained 2-tone pixel shading, minimal details; readable when downscaled to 40px. No scenery, pedestal, grass, buildings, decorative objects, extra letters, or background tile. Do not include the AIUB emblem. No wordmark except letters already essential to the referenced mark.   Palette preserves recognizable brand color with dark forest edge accents where needed. This is a clean tiny inventory sprite, not an elaborate painting. Exactly one icon on genuinely transparent background with alpha. Output square 1024x1024."
+    },
+    {
+      "name": "Dart",
+      "id": "dart",
+      "reference": "design/tech-references/dart.png",
+      "source": "design/source-art/tech-dart.png",
+      "production": "public/art/tech/dart.webp",
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/dart/dart-original.svg",
+      "prompt": "Use case: stylized-concept. Produce ONE small technology inventory icon for a pixel-art adventure developer portfolio. Reference image 1 is the exact Dart logo; preserve its silhouette, recognizable shapes, proportions and original brand colors faithfully. Reference image 2 is the portfolio's approved art style. Apply that crisp 16-bit square-pixel craft to the LOGO ONLY. Center a single large Dart mark occupying 78% of a square canvas. Clear stepped pixel edges, restrained 2-tone pixel shading, minimal details; readable when downscaled to 40px. No scenery, pedestal, grass, buildings, decorative objects, extra letters, or background tile. Do not include the AIUB emblem. No wordmark except letters already essential to the referenced mark.   Palette preserves recognizable brand color with dark forest edge accents where needed. This is a clean tiny inventory sprite, not an elaborate painting. Exactly one icon on genuinely transparent background with alpha. Output square 1024x1024."
+    },
+    {
+      "name": "Git",
+      "id": "git",
+      "reference": "design/tech-references/git.png",
+      "source": "design/source-art/tech-git.png",
+      "production": "public/art/tech/git.webp",
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg",
+      "prompt": "Use case: stylized-concept. Produce ONE small technology inventory icon for a pixel-art adventure developer portfolio. Reference image 1 is the exact Git logo; preserve its silhouette, recognizable shapes, proportions and original brand colors faithfully. Reference image 2 is the portfolio's approved art style. Apply that crisp 16-bit square-pixel craft to the LOGO ONLY. Center a single large Git mark occupying 78% of a square canvas. Clear stepped pixel edges, restrained 2-tone pixel shading, minimal details; readable when downscaled to 40px. No scenery, pedestal, grass, buildings, decorative objects, extra letters, or background tile. Do not include the AIUB emblem. No wordmark except letters already essential to the referenced mark.   Palette preserves recognizable brand color with dark forest edge accents where needed. This is a clean tiny inventory sprite, not an elaborate painting. Exactly one icon on genuinely transparent background with alpha. Output square 1024x1024."
+    },
+    {
+      "name": "GitHub",
+      "id": "github",
+      "reference": "design/tech-references/github.png",
+      "source": "design/source-art/tech-github.png",
+      "production": "public/art/tech/github.webp",
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg",
+      "prompt": "Use case: stylized-concept. Produce ONE small technology inventory icon for a pixel-art adventure developer portfolio. Reference image 1 is the exact GitHub logo; preserve its silhouette, recognizable shapes, proportions and original brand colors faithfully. Reference image 2 is the portfolio's approved art style. Apply that crisp 16-bit square-pixel craft to the LOGO ONLY. Center a single large GitHub mark occupying 78% of a square canvas. Clear stepped pixel edges, restrained 2-tone pixel shading, minimal details; readable when downscaled to 40px. No scenery, pedestal, grass, buildings, decorative objects, extra letters, or background tile. Do not include the AIUB emblem. No wordmark except letters already essential to the referenced mark.   Palette preserves recognizable brand color with dark forest edge accents where needed. This is a clean tiny inventory sprite, not an elaborate painting. Exactly one icon on genuinely transparent background with alpha. Output square 1024x1024."
+    },
+    {
+      "name": "Postman",
+      "id": "postman",
+      "reference": "design/tech-references/postman.png",
+      "source": "design/source-art/tech-postman.png",
+      "production": "public/art/tech/postman.webp",
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/postman/postman-original.svg",
+      "prompt": "Use case: stylized-concept. Produce ONE small technology inventory icon for a pixel-art adventure developer portfolio. Reference image 1 is the exact Postman logo; preserve its silhouette, recognizable shapes, proportions and original brand colors faithfully. Reference image 2 is the portfolio's approved art style. Apply that crisp 16-bit square-pixel craft to the LOGO ONLY. Center a single large Postman mark occupying 78% of a square canvas. Clear stepped pixel edges, restrained 2-tone pixel shading, minimal details; readable when downscaled to 40px. No scenery, pedestal, grass, buildings, decorative objects, extra letters, or background tile. Do not include the AIUB emblem. No wordmark except letters already essential to the referenced mark.   Palette preserves recognizable brand color with dark forest edge accents where needed. This is a clean tiny inventory sprite, not an elaborate painting. Exactly one icon on genuinely transparent background with alpha. Output square 1024x1024."
+    },
+    {
+      "name": "VS Code",
+      "id": "vscode",
+      "reference": "design/tech-references/vscode.png",
+      "source": "design/source-art/tech-vscode.png",
+      "production": "public/art/tech/vscode.webp",
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg",
+      "prompt": "Use case: stylized-concept. Produce ONE small technology inventory icon for a pixel-art adventure developer portfolio. Reference image 1 is the exact VS Code logo; preserve its silhouette, recognizable shapes, proportions and original brand colors faithfully. Reference image 2 is the portfolio's approved art style. Apply that crisp 16-bit square-pixel craft to the LOGO ONLY. Center a single large VS Code mark occupying 78% of a square canvas. Clear stepped pixel edges, restrained 2-tone pixel shading, minimal details; readable when downscaled to 40px. No scenery, pedestal, grass, buildings, decorative objects, extra letters, or background tile. Do not include the AIUB emblem. No wordmark except letters already essential to the referenced mark.   Palette preserves recognizable brand color with dark forest edge accents where needed. This is a clean tiny inventory sprite, not an elaborate painting. Exactly one icon on genuinely transparent background with alpha. Output square 1024x1024."
+    },
+    {
+      "name": "Arduino",
+      "id": "arduino",
+      "reference": "design/tech-references/arduino.png",
+      "source": "design/source-art/tech-arduino.png",
+      "production": "public/art/tech/arduino.webp",
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/arduino/arduino-original.svg",
+      "prompt": "Use case: stylized-concept. Produce ONE small technology inventory icon for a pixel-art adventure developer portfolio. Reference image 1 is the exact Arduino logo; preserve its silhouette, recognizable shapes, proportions and original brand colors faithfully. Reference image 2 is the portfolio's approved art style. Apply that crisp 16-bit square-pixel craft to the LOGO ONLY. Center a single large Arduino mark occupying 78% of a square canvas. Clear stepped pixel edges, restrained 2-tone pixel shading, minimal details; readable when downscaled to 40px. No scenery, pedestal, grass, buildings, decorative objects, extra letters, or background tile. Do not include the AIUB emblem. No wordmark except letters already essential to the referenced mark.   Palette preserves recognizable brand color with dark forest edge accents where needed. This is a clean tiny inventory sprite, not an elaborate painting. Exactly one icon on genuinely transparent background with alpha. Output square 1024x1024."
+    },
+    {
+      "name": "Supabase",
+      "id": "supabase",
+      "reference": "design/tech-references/supabase.png",
+      "source": "design/source-art/tech-supabase.png",
+      "production": "public/art/tech/supabase.webp",
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/supabase/supabase-original.svg",
+      "prompt": "Use case: stylized-concept. Produce ONE small technology inventory icon for a pixel-art adventure developer portfolio. Reference image 1 is the exact Supabase logo; preserve its silhouette, recognizable shapes, proportions and original brand colors faithfully. Reference image 2 is the portfolio's approved art style. Apply that crisp 16-bit square-pixel craft to the LOGO ONLY. Center a single large Supabase mark occupying 78% of a square canvas. Clear stepped pixel edges, restrained 2-tone pixel shading, minimal details; readable when downscaled to 40px. No scenery, pedestal, grass, buildings, decorative objects, extra letters, or background tile. Do not include the AIUB emblem. No wordmark except letters already essential to the referenced mark.   Palette preserves recognizable brand color with dark forest edge accents where needed. This is a clean tiny inventory sprite, not an elaborate painting. Exactly one icon on genuinely transparent background with alpha. Output square 1024x1024."
+    }
+  ]
+}
